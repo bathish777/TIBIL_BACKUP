@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.amorenew.mobile_number-merged_res-11:/layout/notification_template_part_time.xml",
+        "source": "com.amorenew.mobile_number-core-1.9.0-1:/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "com.amorenew.mobile_number-merged_res-11:/layout/custom_dialog.xml",
+        "source": "com.amorenew.mobile_number-core-1.9.0-1:/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "com.amorenew.mobile_number-merged_res-11:/layout/notification_template_part_chronometer.xml",
+        "source": "com.amorenew.mobile_number-core-1.9.0-1:/layout/notification_template_part_chronometer.xml"
+    }
+]

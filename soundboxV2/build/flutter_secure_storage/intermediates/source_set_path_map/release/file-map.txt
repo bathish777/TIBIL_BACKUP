@@ -1,0 +1,13 @@
+com.it_nomads.fluttersecurestorage.flutter_secure_storage-jetified-annotation-experimental-1.1.0-0 /home/ibrahim/.gradle/caches/transforms-3/257e0bb88528f5fc66bfd853728809aa/transformed/jetified-annotation-experimental-1.1.0/res
+com.it_nomads.fluttersecurestorage.flutter_secure_storage-jetified-window-1.0.0-beta04-1 /home/ibrahim/.gradle/caches/transforms-3/6582e67aea0be70979c64a0bfb01e347/transformed/jetified-window-1.0.0-beta04/res
+com.it_nomads.fluttersecurestorage.flutter_secure_storage-jetified-security-crypto-1.1.0-alpha06-2 /home/ibrahim/.gradle/caches/transforms-3/6aa807322c46df8d48b7b8c63dcdcefc/transformed/jetified-security-crypto-1.1.0-alpha06/res
+com.it_nomads.fluttersecurestorage.flutter_secure_storage-core-1.6.0-3 /home/ibrahim/.gradle/caches/transforms-3/974b4f2252348b5ef43741b27d416a49/transformed/core-1.6.0/res
+com.it_nomads.fluttersecurestorage.flutter_secure_storage-jetified-window-java-1.0.0-beta04-4 /home/ibrahim/.gradle/caches/transforms-3/9b0dd0bee9a81680af20f56797c52ab1/transformed/jetified-window-java-1.0.0-beta04/res
+com.it_nomads.fluttersecurestorage.flutter_secure_storage-main-5 /home/ibrahim/.pub-cache/hosted/pub.dev/flutter_secure_storage-9.2.2/android/src/main/res
+com.it_nomads.fluttersecurestorage.flutter_secure_storage-release-6 /home/ibrahim/.pub-cache/hosted/pub.dev/flutter_secure_storage-9.2.2/android/src/release/res
+com.it_nomads.fluttersecurestorage.flutter_secure_storage-pngs-7 /home/ibrahim/Documents/vaaniv2flow/Soundbox/build/flutter_secure_storage/generated/res/pngs/release
+com.it_nomads.fluttersecurestorage.flutter_secure_storage-resValues-8 /home/ibrahim/Documents/vaaniv2flow/Soundbox/build/flutter_secure_storage/generated/res/resValues/release
+com.it_nomads.fluttersecurestorage.flutter_secure_storage-rs-9 /home/ibrahim/Documents/vaaniv2flow/Soundbox/build/flutter_secure_storage/generated/res/rs/release
+com.it_nomads.fluttersecurestorage.flutter_secure_storage-mergeReleaseResources-10 /home/ibrahim/Documents/vaaniv2flow/Soundbox/build/flutter_secure_storage/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.it_nomads.fluttersecurestorage.flutter_secure_storage-mergeReleaseResources-11 /home/ibrahim/Documents/vaaniv2flow/Soundbox/build/flutter_secure_storage/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.it_nomads.fluttersecurestorage.flutter_secure_storage-merged_res-12 /home/ibrahim/Documents/vaaniv2flow/Soundbox/build/flutter_secure_storage/intermediates/merged_res/release

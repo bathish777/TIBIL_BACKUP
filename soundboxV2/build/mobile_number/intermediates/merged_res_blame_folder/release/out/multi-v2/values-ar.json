@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.amorenew.mobile_number-mergeReleaseResources-9:/values-ar/values-ar.xml",
+            "map": [
+                {
+                    "source": "/home/ibrahim/.gradle/caches/transforms-3/5f50fb23ed7197a4adf457105f423f59/transformed/core-1.9.0/res/values-ar/values-ar.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.amorenew.mobile_number-merged_res-11:/values-ar/values-ar.xml",
+            "map": [
+                {
+                    "source": "/home/ibrahim/.gradle/caches/transforms-3/5f50fb23ed7197a4adf457105f423f59/transformed/core-1.9.0/res/values-ar/values-ar.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+com.danjodanjo.flutter_sms_listener-jetified-annotation-experimental-1.1.0-0 /home/ibrahim/.gradle/caches/transforms-3/257e0bb88528f5fc66bfd853728809aa/transformed/jetified-annotation-experimental-1.1.0/res
+com.danjodanjo.flutter_sms_listener-jetified-window-1.0.0-beta04-1 /home/ibrahim/.gradle/caches/transforms-3/6582e67aea0be70979c64a0bfb01e347/transformed/jetified-window-1.0.0-beta04/res
+com.danjodanjo.flutter_sms_listener-core-1.6.0-2 /home/ibrahim/.gradle/caches/transforms-3/974b4f2252348b5ef43741b27d416a49/transformed/core-1.6.0/res
+com.danjodanjo.flutter_sms_listener-jetified-window-java-1.0.0-beta04-3 /home/ibrahim/.gradle/caches/transforms-3/9b0dd0bee9a81680af20f56797c52ab1/transformed/jetified-window-java-1.0.0-beta04/res
+com.danjodanjo.flutter_sms_listener-main-4 /home/ibrahim/.pub-cache/hosted/pub.dev/flutter_sms_listener-0.1.3/android/src/main/res
+com.danjodanjo.flutter_sms_listener-release-5 /home/ibrahim/.pub-cache/hosted/pub.dev/flutter_sms_listener-0.1.3/android/src/release/res
+com.danjodanjo.flutter_sms_listener-pngs-6 /home/ibrahim/Documents/vaaniv2flow/Soundbox/build/flutter_sms_listener/generated/res/pngs/release
+com.danjodanjo.flutter_sms_listener-resValues-7 /home/ibrahim/Documents/vaaniv2flow/Soundbox/build/flutter_sms_listener/generated/res/resValues/release
+com.danjodanjo.flutter_sms_listener-rs-8 /home/ibrahim/Documents/vaaniv2flow/Soundbox/build/flutter_sms_listener/generated/res/rs/release
+com.danjodanjo.flutter_sms_listener-mergeReleaseResources-9 /home/ibrahim/Documents/vaaniv2flow/Soundbox/build/flutter_sms_listener/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.danjodanjo.flutter_sms_listener-mergeReleaseResources-10 /home/ibrahim/Documents/vaaniv2flow/Soundbox/build/flutter_sms_listener/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.danjodanjo.flutter_sms_listener-merged_res-11 /home/ibrahim/Documents/vaaniv2flow/Soundbox/build/flutter_sms_listener/intermediates/merged_res/release

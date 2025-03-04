@@ -1,0 +1,58 @@
+-keep class java.util.stream.Stream
+-keep class j$.time.DayOfWeek
+-keep class j$.time.Instant {
+    long toEpochMilli();
+}
+-keep class j$.time.LocalDateTime {
+    j$.time.LocalDateTime parse(java.lang.CharSequence);
+    j$.time.LocalDateTime plusDays(long);
+    j$.time.LocalDateTime plusWeeks(long);
+}
+-keep class j$.time.ZoneId {
+    j$.time.ZoneId of(java.lang.String);
+}
+-keep class j$.time.ZonedDateTime {
+    int getDayOfMonth();
+    j$.time.DayOfWeek getDayOfWeek();
+    int getHour();
+    int getMinute();
+    int getMonthValue();
+    int getNano();
+    int getSecond();
+    int getYear();
+    j$.time.ZonedDateTime now(j$.time.ZoneId);
+    j$.time.ZonedDateTime of(int, int, int, int, int, int, int, j$.time.ZoneId);
+    j$.time.ZonedDateTime of(j$.time.LocalDateTime, j$.time.ZoneId);
+    j$.time.ZonedDateTime plusDays(long);
+}
+-keep class j$.time.chrono.ChronoZonedDateTime {
+    boolean isBefore(j$.time.chrono.ChronoZonedDateTime);
+    j$.time.Instant toInstant();
+}
+-keep class j$.time.format.DateTimeFormatter {
+    j$.time.format.DateTimeFormatter ISO_LOCAL_DATE_TIME;
+    java.lang.String format(j$.time.temporal.TemporalAccessor);
+}
+-keep class j$.time.temporal.TemporalAccessor
+-keep class j$.util.DesugarTimeZone {
+    java.util.TimeZone getTimeZone(java.lang.String);
+}
+-keep class j$.util.concurrent.ConcurrentHashMap {
+    void <init>();
+    void <init>(int, float, int);
+    void <init>(java.util.Map);
+    boolean containsKey(java.lang.Object);
+    java.lang.Object get(java.lang.Object);
+    java.lang.Object putIfAbsent(java.lang.Object, java.lang.Object);
+    java.lang.Object remove(java.lang.Object);
+    boolean remove(java.lang.Object, java.lang.Object);
+}
+-keep class j$.util.concurrent.ThreadLocalRandom {
+    j$.util.concurrent.ThreadLocalRandom current();
+}
+-keep class j$.util.stream.Stream$VivifiedWrapper {
+    j$.util.stream.Stream convert(java.util.stream.Stream);
+}
+-keep class j$.util.stream.Stream {
+    boolean anyMatch(java.util.function.Predicate);
+}
