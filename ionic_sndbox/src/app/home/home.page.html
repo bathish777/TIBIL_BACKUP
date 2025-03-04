@@ -1,0 +1,91 @@
+<ion-content [fullscreen]="true" id="full-page">
+  <!-- Pink Rounded Container -->
+  <div id="pink-container">
+    <strong class="b">{{ 'TITLE.SIGN_IN' | translate }}</strong>
+  </div>
+
+  <!-- SIM Selection Section -->
+  <div id="checkbox-container">
+    <ng-container class="sim" *ngIf="simInfo.cards.length > 0; else noSim">
+      <ion-radio-group [(ngModel)]="selectedSim" (ionChange)="onSimSelected(selectedSim)" class="radio-container">
+        <!-- First SIM positioned separately with custom styling -->
+        <ion-item class="sim-item" lines ="none"  style="align-self: flex-start;" *ngIf="simInfo.cards.length > 0">
+          <ion-radio slot="start" [value]="simInfo.cards[0]" class="sim-radio"></ion-radio>
+          <div class="sim-card-label">
+         <p>{{ 'SIM.SIM_LABEL' | translate: { index: 1 } }}</p>
+         <ion-label>{{ 'SIM.SIM_NAME' | translate: { carrier: simInfo.cards[0]?.carrierName || ('SIM.UNKNOWN_CARRIER' | translate)} }}</ion-label>
+            <!-- <ion-label>{{index: 1, carrier: simInfo.cards[0]?.carrierName || ('SIM.UNKNOWN_CARRIER' | translate)}}</ion-label> -->
+          </div>
+          <!-- <ion-label class="sim-label">
+            {{ 'SIM.SIM_LABEL' | translate: { index: 1, carrier: simInfo.cards[0]?.carrierName || ('SIM.UNKNOWN_CARRIER' | translate) } }}
+          </ion-label> -->
+        </ion-item>
+        <!-- Remaining SIM cards -->
+        <ion-item class="sim-item" *ngFor="let sim of simInfo.cards.slice(1); let i = index">
+          <ion-radio slot="start" [value]="sim" class="sim-radio"></ion-radio>
+          <ion-label class="sim-label">
+            {{ 'SIM.SIM_LABEL' | translate: { index: i + 2, carrier: sim?.carrierName || ('SIM.UNKNOWN_CARRIER' | translate) } }}
+          </ion-label>
+        </ion-item>
+      </ion-radio-group>
+      
+    </ng-container>
+
+    <ng-template #noSim>
+      <p>{{ errorMessage || ('SIM.NO_SIM' | translate) }}</p>
+    </ng-template>
+  </div>
+
+  <!-- Terms and Conditions -->
+  <div id="terms-container">
+    <ion-item lines="none">
+      <ion-checkbox slot="start" [(ngModel)]="isTermsAccepted" class="small-checkbox"></ion-checkbox>
+      <ion-label class="terms-text">
+        {{ 'TERMS.ACCEPT' | translate }}
+        <a class="terms-link" (click)="openTermsModal()" id="open-modal">{{ 'TERMS.LINK' | translate }}</a>
+      </ion-label>
+    </ion-item>
+  </div>
+
+  <!-- Terms and Conditions Modal -->
+  <ion-modal class="t" [isOpen]="isModalOpen">
+    <ng-template>
+      <ion-toolbar>
+        <ion-title class="custom-title">{{ 'TERMS.TITLE' | translate }}</ion-title>
+        <ion-buttons slot="end">
+          <ion-button class="q" (click)="closeTermsModal()" >
+            <img src="assets/Vector.png" alt="{{ 'TERMS.CLOSE' | translate }}" />
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+      <ion-content>
+        <div class="terms-content">
+          <p *ngIf="termsContent; else loadingOrError">
+            {{ termsContent }}
+          </p>
+          <ng-template #loadingOrError>
+            <p>{{ 'TERMS.LOADING_OR_ERROR' | translate }}</p>
+          </ng-template>
+        </div>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+  
+  <ion-modal class="t" [isOpen]="isLoader" >
+    <ng-template>
+     <app-loader-page></app-loader-page>
+
+    </ng-template>
+    
+    
+  </ion-modal>
+
+  <!-- Sign In Button -->
+  <div id="sign-in-button">
+    <button [disabled]="!isSimSelected || !isTermsAccepted" (click)="onNextClick()" class="next-button">
+      {{ 'BUTTON.NEXT' | translate }}
+      <img src="assets/arrow.png" alt="{{ 'BUTTON.NEXT_ICON' | translate }}" class="next-icon" />
+    </button>
+    
+  </div>
+</ion-content>

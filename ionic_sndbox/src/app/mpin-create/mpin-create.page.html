@@ -1,0 +1,39 @@
+<ion-content [fullscreen]="true" id="full-page">
+  <!-- Pink Rounded Container -->
+  <div id="pink-container">
+    <strong class="b">{{ 'CREATE_LOGIN_PIN.TITLE' | translate }}</strong>
+  </div>
+
+  <!-- MPIN Input Section -->
+  <div id="checkbox-container">
+    <!-- Instruction Text -->
+    <div class="instruction-container">
+      <ion-label class="instruction-text">
+        {{ 'CREATE_LOGIN_PIN.INSTRUCTION' | translate }}
+      </ion-label>
+    </div>
+
+    <!-- MPIN Input Boxes -->
+    <div class="otp-input-container">
+      <ng-otp-input #otpInput
+        class="a" 
+        [(ngModel)]="otp" 
+        [config]="{ length: 4, allowNumbersOnly: true, isPasswordInput : true, containerClass:'input-container', inputStyles: { 'width': '50px', 'height': '40px', 'margin': '0px' } }"
+        (onInputChange)="onOtpInputChange($event)">
+      </ng-otp-input>
+    </div>
+
+    <!-- Error Message -->
+    <ion-text class="span" color="danger" *ngIf="errorMessage">
+      {{ 'ERROR.INVALID_PIN' | translate }}
+    </ion-text>
+  </div>
+
+  <!-- Next Button -->
+  <div id="sign-in-button">
+    <button (click)="createMpin()" class="next-button">
+      {{ 'CREATE_LOGIN_PIN.NEXT' | translate }}
+      <img src="assets/arrow.png" alt="Next Icon" class="next-icon" />
+    </button>
+  </div>
+</ion-content>

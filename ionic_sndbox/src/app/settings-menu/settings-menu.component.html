@@ -1,0 +1,96 @@
+<ion-list>
+  <!-- My Profile -->
+  <ion-item button (click)="setCurrentPage('profile')">
+    <ion-icon name="person" slot="start"></ion-icon>
+    <ion-label class="settings-label">{{ 'MY_PROFILE' | translate }}</ion-label> <!-- Translatable label -->
+    <ion-img src="assets/right.png" slot="end"></ion-img>
+  </ion-item>
+
+  <!-- My QR Code -->
+  <ion-item button (click)="setCurrentPage('qr-code')">
+    <ion-icon name="qr-code" slot="start"></ion-icon>
+    <ion-label class="settings-label">{{ 'MY_QR_CODE' | translate }}</ion-label> <!-- Translatable label -->
+    <ion-img src="assets/right.png" slot="end"></ion-img>
+  </ion-item>
+
+  <!-- Announcement -->
+  <ion-item>
+    <ion-icon name="megaphone" slot="start"></ion-icon>
+    <ion-label class="settings-label">{{ 'ANNOUNCEMENT' | translate }}</ion-label>
+    <div class="toggle-container"><!-- Translatable label -->
+      <ion-text>Mute</ion-text>
+    <ion-toggle [(ngModel)]="_isMuted" (ionChange)="toggleMute()" slot="end" ></ion-toggle>
+    <ion-text>Unmute</ion-text>
+    </div>
+  </ion-item>
+
+  <!-- Language Preference -->
+  <ion-item button (click)="setCurrentPage('language-preference')">
+    <ion-icon name="language" slot="start"></ion-icon>
+    <ion-label class="settings-label">{{ 'LANGUAGE_PREFERENCE' | translate }}</ion-label> <!-- Translatable label -->
+    <ion-img src="assets/right.png" slot="end"></ion-img>
+  </ion-item>
+
+  <!-- Change My MPIN -->
+  <ion-item button (click)="confirmResetMpin()">
+    <ion-icon name="key" slot="start"></ion-icon>
+    <ion-label class="settings-label">{{ 'CHANGE_MPIN' | translate }}</ion-label> <!-- Translatable label -->
+    <ion-img src="assets/right.png" slot="end"></ion-img>
+  </ion-item>
+
+  <!-- Sign Out -->
+  <ion-item button (click)="openSignOutModal()">
+    <ion-icon name="exit" slot="start"></ion-icon>
+    <ion-label class="settings-label">{{ 'SIGN_OUT' | translate }}</ion-label> <!-- Translatable label -->
+    <ion-img src="assets/Exit.png" slot="end"></ion-img>
+  </ion-item>
+</ion-list>
+
+<!-- Sign Out Modal -->
+<ion-modal [isOpen]="isSignOutModalOpen" (didDismiss)="closeSignOutModal()" class="custom-modal">
+  <ng-template>
+    <ion-content no-scroll>
+      <div class="signout-content">
+        {{ 'SIGN_OUT_CONFIRMATION' | translate }} <br>  
+          <p   class="additional-text">   {{ 'SIGN_OUT_WARNING' | translate }}</p> <!-- Added warning text -->
+        <div class="signout-buttons">
+          <ion-button class="custom-button2" (click)="closeSignOutModal()">{{ 'NO' | translate }}</ion-button> <!-- Translatable text -->
+          <ion-button class="custom-button" (click)="signOut()">{{ 'YES' | translate }}</ion-button> <!-- Translatable text -->
+        </div>
+      </div>
+    </ion-content>
+  </ng-template>
+</ion-modal>
+
+<!-- Mute Announcement Confirmation Modal -->
+
+<!-- Mute Announcement Confirmation Modal -->
+<ion-modal [isOpen]="isMuteAnnouncementModalOpen" (didDismiss)="closeMuteAnnouncementModal()" class="custom-modal">
+  <ng-template>
+    <ion-content no-scroll>
+      <div class="confirmation-content">
+        <p class="a">{{ muteConfirmationText }}</p> <!-- This text is dynamically set in the component -->
+        <p  *ngIf="_isMuted" class="additional-text2">{{ 'ANNOUNCEMENT_WARNING' | translate }}</p>
+        <!-- Additional text for unmute -->
+        <p *ngIf="!_isMuted" class="additional-text2">{{ 'ANNOUNCEMENT_MUTE_WARNING' | translate }}</p>
+      </div>
+    </ion-content>
+  </ng-template>
+</ion-modal>
+
+<!-- Reset MPIN Confirmation Modal -->
+<ion-modal [isOpen]="isResetMpinModalOpen" (didDismiss)="closeResetMpinModal()" class="custom-modal">
+  <ng-template>
+    <ion-content no-scroll>
+      <div class="signout-content">
+        <p class="z">{{ 'RESET_MPIN_CONFIRMATION' | translate }}</p> <!-- Translatable confirmation text -->
+        <p class="additional-text2">{{ 'RESET_MPIN_WARNING' | translate }}</p> <!-- Translatable warning text with class style -->
+        <div class="signout-buttons">
+          <ion-button class="custom-button2" (click)="closeResetMpinModal()">{{ 'NO' | translate }}</ion-button> <!-- Translatable text -->
+          <ion-button class="custom-button" (click)="navigateToVerification()">{{ 'YES' | translate }}</ion-button> <!-- Translatable text -->
+        </div>
+      </div>
+    </ion-content>
+  </ng-template>
+</ion-modal>
+

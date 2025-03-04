@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "902653650943",
+    "project_id": "dev-dms-soundbox",
+    "storage_bucket": "dev-dms-soundbox.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:902653650943:android:1cc5af8f1adb004a5369ca",
+        "android_client_info": {
+          "package_name": "com.soundbox.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBljHyhhymIRhNZII2LgBUMlgookE95fd4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

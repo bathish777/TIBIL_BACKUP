@@ -1,0 +1,65 @@
+<div  id="full-page">
+  <!-- Pink Rounded Container -->
+  <div id="pink-container">
+    
+    <strong class="b">
+      {{ 'ACCOUNT_SELECTION.HEADER' | translate }}
+    </strong>
+  </div>
+  <div id="checkbox-container">
+    <ng-container *ngIf="accounts.length > 0; else noAccounts">
+        <ion-radio-group [(ngModel)]="selectedAccountId">
+           
+              <div class="item-content" class="accountholders" *ngFor="let account of accounts">
+                <div class="account-item">
+                  <ion-radio slot="start" [value]="account.id"></ion-radio>
+                  <ion-label>
+                      {{ account.number }}
+                      <span class="account-id">
+                          <br> {{ account.name }}
+                    </span>
+                      <span class="account-id2">
+                          <br> {{ account.id }}
+                      </span>
+                      <div *ngIf="account.showDetails" class="account-details">
+                        <p>
+                            <span class="account-label">{{ 'ACCOUNT_SELECTION.ACCOUNT_TYPE' | translate }}</span>: {{ account.type }}
+                        </p>
+                        <p>
+                            <span class="account-label">{{ 'ACCOUNT_SELECTION.IFSC_CODE' | translate }}</span>: {{ account.ifscCode }}
+                        </p>
+                    </div>
+                    
+                  </ion-label>
+                </div>
+               
+               
+
+
+                <!-- Cursor pointer only for the dropdown image -->
+                <img [src]="account.showDetails ? 'assets/dropdown.png' : 'assets/down.png'" 
+                     alt="{{ 'ACCOUNT_SELECTION.DROPDOWN_ALT' | translate }}"
+                     class="dropdown-image" 
+                     (click)="toggleAccountDetails(account.id)" />
+                     </div>
+         
+            
+        </ion-radio-group>
+    </ng-container>
+    <ng-template #noAccounts>
+        <p>{{ errorMessage || ('ACCOUNT_SELECTION.NO_ACCOUNTS' | translate) }}</p>
+    </ng-template>
+  </div>
+  <ion-modal [isOpen]="isLoader">
+    <app-loader-page></app-loader-page>
+  </ion-modal>
+  
+  
+
+  <div id="sign-in-button">
+    <button (click)="navigateToVpaSelection()" class="next-button">
+      {{ 'BUTTON.NEXT' | translate }}
+      <img src="assets/arrow.png" alt="{{ 'BUTTON.NEXT_ICON_ALT' | translate }}" class="next-icon" />
+    </button>
+  </div>
+</div>

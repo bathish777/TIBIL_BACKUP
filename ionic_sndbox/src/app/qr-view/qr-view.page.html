@@ -1,0 +1,40 @@
+<ion-content [fullscreen]="true" id="full-page">
+  <!-- Cancel Button at Top Right -->
+  <div class="cancel-button-container">
+    <img
+    slot="end"
+      src="assets/close2.png"
+      alt="Cancel"
+      (click)="cancelAndShowDashboard()"
+      class="cancel-icon"
+    />
+  </div>
+
+  <!-- Rest of your content -->
+  <div id="greeting-container">
+    <strong class="b">{{ 'GREETING' | translate }}</strong><br />
+    <strong class="c">{{ customerName }}</strong><br />
+  </div>
+
+  <!-- QR Code Section -->
+  <div id="checkbox-container">
+    <div class="instruction-container">
+      <ion-label class="instruction-text">
+        {{ 'QR_CODE_HEADER' | translate }}
+      </ion-label>
+    </div>
+
+    <div class="qr-code-container">
+      <img *ngIf="base64QrCode" [src]="base64QrCode" alt="QR Code" class="qr-code" />
+      <ion-text *ngIf="!base64QrCode">{{ 'NO_QR_CODE' | translate }}</ion-text>
+    </div>
+  </div>
+
+  <!-- Next Button -->
+  <div id="sign-in-button">
+    <button (click)="navigateToDashboard()" class="next-button">
+      {{ 'GO_TO_DASHBOARD' | translate }}
+      <img src="assets/arrow.png" alt="Next Icon" class="next-icon" />
+    </button>
+  </div>
+</ion-content>

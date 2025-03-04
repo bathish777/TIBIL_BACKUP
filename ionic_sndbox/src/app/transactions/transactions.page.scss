@@ -1,0 +1,381 @@
+/* Ensure the entire page fits without unexpected scrolling */
+#full-page {
+  position: relative;
+  height: 100%;
+  background-color: whitesmoke; /* White background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.date{
+  font-family: 'Karla';
+  font-weight: 700;
+  font-size: 12px;
+  leading-trim: Cap height;
+  line-height: 14.03px;
+  letter-spacing: 0%;
+  color: rgba(61, 61, 59, 1);
+  
+
+}
+ .rectangle {
+  display: inline-block;
+  padding: 5px px;
+  border: 1px solid rgba(168, 168, 239, 1);
+  border-radius: 4px;
+  height: 25px;
+  background: #f7f9fd;
+  margin: 0 5px;
+  font-size: 12px;
+  padding: 5px 0px;
+  font-family:'Karla';
+}
+
+.d{
+  font-family: 'Karla';
+font-weight: 400;
+font-size: 14px;
+leading-trim: Cap height;
+line-height: 16.37px;
+letter-spacing: 0%;
+color: rgba(19, 19, 103, 1);
+
+}
+
+/* Pink Header Section */
+#pink-container {
+  background-color: #131367;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.date{
+  padding: 5px;
+}
+/* QR Section */
+.qr-section {
+  display: flex;
+  flex-direction: column; /* Stack QR image and text vertically */
+  align-items: center;
+  justify-content: center;
+  gap: 5px; /* Add spacing between image and text */
+  color: white;
+  text-align: center; /* Center-align the text */
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* QR Image */
+.qr-section .qr-image {
+  width: 24px; /* Width as per the specified dimensions */
+  height: 31px; /* Height as per the specified dimensions */
+}
+.qr-section .qr-text {
+  
+
+  font-family: Hind;
+  font-size: 2px;
+  font-weight: 0px;
+  // line-height: 16.01px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #3d3d3b;
+  gap: 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+/* Notification Banner */
+.notification-banner {
+  color: #3d3d3b;
+  background: #fcedd3;
+  display: flex
+;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Karla';
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 11.69px;
+  text-align: left;
+  text-underline-position: from-font;
+  height: 25px;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+}
+.close-icon {
+  cursor: pointer;
+  font-size: 20px;
+  color: #131367;
+  margin-right: 5px;
+}
+
+
+
+#date-container{
+  text-align: center;
+  display: flex
+; 
+font-family:'Karla';
+  font-size: 16px;
+  color: #333;
+  height: 50px;
+  gap: 0px;
+  border-radius: 12.5px 0 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.date-wrapper strong {
+  width: 230px;
+height: 25px;
+top: 115px;
+left: 66px;
+gap: 0px;
+border-radius: 4px 0px 0px 0px;
+border: 1px 0px 0px 0px;
+
+}
+
+/* Bank Info Section */
+.bank-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  margin-right: 0px;
+  width: 360px;
+  height: 45px;
+  top: 30px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.logo {
+  width: 50px; /* Logo size */
+  height: 40px;
+}
+
+.dashboard-text {
+  font-family: Philosopher;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 17.92px;
+  letter-spacing: 0%;
+  color: white;
+  margin: 40px;
+  gap: 15px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-left: 120px;
+}
+
+/* Ensure #transactions-page handles its own scrolling */
+#transactions-page {
+  flex-grow: 1; /* Take up remaining space */
+  overflow-y: auto; /* Allow vertical scrolling inside this container */
+}
+
+
+
+
+// #stats-container {
+ 
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: center;
+//   border-radius:4px;
+//   margin:0px 10px;
+//   width:340px;
+//   height:80px;
+//   color: rgba(255, 255, 255, 1);
+
+//   margin-bottom:10px;
+//   box-shadow: 0 0px 2px rgba(234, 237, 243, 1);
+
+// }
+#stats-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 4px;
+  margin: 0px 10px;
+  width: 340px;
+  height: 80px;
+  color: rgba(19, 19, 103, 1);
+
+  margin-bottom: 10px;
+  
+  /* Updated box-shadow with both drop shadows */
+  box-shadow: 
+    2px 2px 4px 0px rgba(168, 168, 239, 0.07), 
+    -2px -2px 4px 0px rgba(168, 168, 239, 0.07);
+}
+
+/* Ensure transaction list is scrollable */
+#transaction-list {
+  margin-top: 20px; /* Clear space from the header */
+  padding: 0 16px;
+  overflow-y: auto; /* Enable vertical scrolling for the list */
+  max-height: calc(100vh - 120px); /* Adjust height to fit within the page */
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+.banner{
+margin-left: 10px;
+}
+.stat-card1 {
+  border-radius: 10px;
+  padding: 20px;
+  width: 165px; /* Set specific width */
+  height: 80px; /* Set specific height */
+  position: relative; /* Allow positioning properties */
+  top: -15px; /* Adjust vertical position */
+  left: 10px; /* Adjust horizontal position */
+  gap: 0px; /* Remove spacing between elements inside */
+  border-radius: 10px; /* Rounded corners for top-left only */
+  display: flex; /* Flex layout for content alignment */
+  flex-direction: column; /* Arrange content vertically */
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  background: #f9f9f9; /* Light background color */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center; /* Center-align text inside */
+}
+
+#stats-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 20px 0;
+  padding: 0 16px;
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-between;
+  background: #fff;
+ 
+  width: 170px;
+  text-align: center;
+  width: 340px;
+height: 80px;
+top: 155px;
+left: 10px;
+gap: 0px;
+border-radius: 4px 0px 0px 0px;
+opacity: 0px;
+border: 2px solid rgba(255, 243, 249, 1)
+}
+
+.stat-label {
+
+  font-family: Philosopher;
+font-size: 12px;
+font-weight: 400;
+line-height: 13.44px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+color: rgba(61, 61, 59, 1);
+
+}
+.a{
+  font-family: ' Karla';
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(61, 61, 59, 1);
+  font-family: 'Karla';
+
+}
+.b{
+  font-family: 'Karla';
+font-size: 10px;
+font-weight: 400;
+color: rgba(61, 61, 59, 1);
+
+}
+.c{
+  
+  font-family: 'Karla';
+font-size: 14px;
+font-weight: 600;
+color: rgba(61, 61, 59, 1);
+}
+// .stat-label {
+
+//   font-family: Philosopher;
+//   font-size: 12px;
+//   font-weight: 400;
+//   line-height: 13.44px;
+//   text-align: center;
+//   text-underline-position: from-font;
+//   text-decoration-skip-ink: none;
+//   color: #3D3D3B;
+
+// }
+
+
+.no-more-transactions {
+  text-align: center;
+  padding: 16px;
+  color: #666;
+  font-size: 14px;
+}
+.z{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 16px;
+  color: #666;
+  font-size: 14px;
+}
+.stat-value {
+  font-family: 'Karla';
+font-weight: 500;
+font-size: 25px;
+leading-trim: Cap height;
+line-height: 29.23px;
+letter-spacing: 0%;
+text-align: center;
+color: rgba(19, 19, 103, 1);
+
+}
+
+.stat-icon {
+  font-size: 30px;
+  color: #A8A8EF;
+
+  margin-bottom: -10px;
+}
+#transaction-list {
+  margin: 20px 16px;
+}
+
+.scrollable-list {
+  height: calc(100vh - 190px); 
+  overflow-y: auto;
+  
+}  

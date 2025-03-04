@@ -1,0 +1,373 @@
+#full-page {
+    position: relative;
+    height: 100%;
+    background-color: whitesmoke; /* White background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+
+
+
+
+  :host(.toggle-checked) .toggle-icon {
+    background: white;
+    border: 1px solid black;
+}
+.native-wrapper .toggle-icon {
+  width: 35px;
+  height: 15px;
+}
+.toggle-icon {
+  border-radius: var(--border-radius);
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--track-background);
+  overflow: inherit;
+}
+.toggle-wrapper {
+  display: flex
+;
+  position: relative;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+  height: inherit;
+  transition: background-color 15ms linear;
+  cursor: inherit;
+}
+
+.additional-text2{
+  font-family:'Karla';
+font-weight: 400;
+font-size: 12px;
+leading-trim: Cap height;
+line-height: 14.03px;
+letter-spacing: 0%;
+text-align: center;
+
+}
+.toggle-icon-wrapper {
+  display: flex
+;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: var(--handle-transition);
+  will-change: transform;
+}
+.toggle-inner {
+  border-radius: var(--handle-border-radius);
+  position: absolute;
+  left: var(--handle-spacing);
+  width: var(--handle-width);
+  height: var(--handle-height);
+  max-height: var(--handle-max-height);
+  transition: var(--handle-transition);
+  background: var(--handle-background);
+  box-shadow: var(--handle-box-shadow);
+  contain: strict;
+}
+
+.z{
+  font-family:'Karla';
+  font-weight: 400;
+  font-size: 12px;
+  leading-trim: Cap height;
+  line-height: 14.03px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgba(61, 61, 59, 1);
+}
+
+  
+  /* Pink Header Section */
+  #pink-container {
+    background-color: #131367;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  ion-label {
+   font-family:'Karla';
+    font-weight: 400;
+    font-size: 12px;
+   
+  line-height: 14.03px;
+  letter-spacing: 0%;
+}
+.a{
+  margin-left: 40px;
+}
+ion-content {
+
+    --padding-start: 0; /* Remove default padding */
+    margin-right: 150px;
+  }
+  
+  ion-list {
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
+    margin-left: -70px;
+    margin-top: 60px;
+  }
+  
+  ion-item {
+    --inner-padding-start: 16px; /* Add padding to the left for alignment */
+    text-align: start; /* Align content to the start */
+    font-size: 15px;
+  }
+  .toggle {
+    margin-left: 140px;
+  }
+  .b {
+    // width: 100%;
+    // background-color: red;
+    margin-left: 180px;
+  }
+  .arrow-icon {
+    color: black !important; /* Ensures the icon is always black */
+    font-size: 8px; /* Adjust size if needed */
+  }
+  .custom-icon {
+    width: 24px; /* Adjust width to fit within the ion-item */
+    height: 24px; /* Ensure consistent height */
+    margin-right: 8px; /* Optional: Add spacing between icon and label */
+    object-fit: contain; /* Maintain aspect ratio of the image */
+    margin-right: -10px;
+  }
+  
+  .arrow-icon {
+    width: 16px; /* Adjust to a smaller size for chevron */
+    height: 16px; /* Keep consistent size */
+    margin-left: 8px; /* Optional: Add spacing before the arrow */
+    object-fit: contain; /* Maintain aspect ratio of the image */
+  }
+  .additional-text{
+    font-family: Karla;
+font-weight: 400;
+font-size: 12px;
+leading-trim: Cap height;
+line-height: 14.03px;
+letter-spacing: 0%;
+text-align: center;
+color: rgba(61, 61, 59, 1);
+
+  }
+  ion-item {
+    --inner-padding-start: 12px; /* Adjust padding for alignment */
+    --padding-end: 12px; /* Adjust padding for alignment */
+    display: flex; /* Ensure content alignment */
+    align-items: center; /* Vertically center the content */
+    height: 48px; /* Standardize item height */
+  }
+  .signout-content {
+
+    text-align: center;
+   font-family:'Karla';
+font-size: 14px;
+font-weight: 700;
+line-height: 16.37px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: rgba(61, 61, 59, 1);
+
+    
+
+    // margin-top: -22px;
+  }
+  
+  .signout-buttons ion-button {
+    margin: 10px;
+    --box-shadow:none;
+    min-height: 25px
+  }
+  .t {
+    // background-color: red;
+  
+    // display: flex;
+    align-content: center;
+    margin-left: 50px;
+    margin-top: 200px;
+    width: 280px;
+    // margin-top: 0px;
+    height: 178px;
+  
+    gap: 0px;
+    // opacity: 0px;
+  }
+  /* Custom modal styles */
+  .custom-modal {
+    
+    --width: 320px;
+    --height: 178px;
+    --left: 2970px;
+    --gap: 0px;
+    --opacity: 1;
+    --background: transparent;
+    --border-radius: 10px;
+    padding: 10px 20px;
+  }
+  .p{
+    font-size: 14px;
+  }
+  custom-modal.confirmation-content, .custom-modal .signout-content {
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 178px;
+    padding: 10px 20px;
+}
+  
+  .custom-modal .confirmation-buttons,
+  .custom-modal .signout-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  :host(.button-solid) {
+    --background-activated: transparent;
+    --background-hover: var(--ion-color-primary-contrast, #fff);
+    --background-focused: var(--ion-color-primary-contrast, #fff);
+    --background-activated-opacity: 0;
+     --box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12); 
+}
+  /* Small modal style */
+  .small-modal {
+    --width: 70%; /* Adjust the width percentage */
+    --max-width: 350px;
+    --height: auto;
+    --min-height: 200px;
+    --padding: 10px;
+  }
+  .settings-label{
+    font-family: Karla;
+font-weight: 400;
+font-size: 12px;
+leading-trim: Cap height;
+line-height: 14.03px;
+letter-spacing: 0%;
+color: rgba(61, 61, 59, 1);
+
+  }
+  
+  .small-modal .confirmation-content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .small-modal .confirmation-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .small-modal .custom-button, .small-modal .custom-button2 {
+    width: 45%; /* Adjust button width */
+  }
+  /* Common styles for the confirmation buttons */
+  /* Common styles for the confirmation buttons */
+  /* Common styles for the confirmation buttons */
+  .confirmation-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between buttons */
+  }
+  
+  .confirmation-content{
+    margin-top: 0px;
+  }
+  
+  /* Styles for Yes and No buttons */
+  .custom-button {
+    background-color: #131367 !important; /* Set background to the desired color for "Yes" */
+    color: white !important; /* Text color for "Yes" */
+    border: none; /* Optional: remove border */
+    --background: none; /* Override Ionic default background */
+  }
+  
+  .custom-button2 {
+    background-color: white !important; /* White background for "No" */
+    color: black !important; /* Text color for "No" */
+    border: 1px solid #131367; /* Optional: add a border for "No" */
+    --background: none; /* Override Ionic default background */
+  }
+  .additional-text{
+    font-size: 12px;
+    font-weight: 400;
+
+    margin: 0px;
+  }
+  
+  /* General button adjustments */
+  .custom-button, .custom-button2 {
+    width: 60px;
+    height: 25px;
+    border-radius: 84.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 700;
+}
+  /* Optional: Align buttons properly */
+  .signout-buttons,
+  .confirmation-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin-top: 15px;
+  }
+ 
+  ion-toggle {
+    --track-background: white;
+    --track-background-checked: white;
+    --handle-background: rgba(187, 187, 187, 1);
+    --handle-background-checked: #131367;
+    --handle-width: 11px;
+    --handle-height: 11px;
+    --handle-max-height: auto;
+    --handle-spacing: 2px;
+    --handle-border-radius: 50%;
+    --handle-box-shadow: none;
+  }
+  
+  ion-toggle::part(track) {
+    height: 15px;
+    width: 25px;
+    border:1px solid #131367;
+    /* Required for iOS handle to overflow the height of the track */
+    overflow: visible;
+  }
+  .toggle-container{
+    display: flex;
+    width:85px;
+    align-items: center;
+    justify-content: space-between;
+    ion-text{
+      font-size: 8px;
+      font-weight:600;
+      color:rgba(134, 134, 131, 1);
+     
+    }
+  }
+  // ion-toggle::part(track) {
+  //   border: 2px solid red; // Change border color when NOT checked
+  // }
+  
+  // ion-toggle::part(track-active) {
+  //   border: 2px solid green; // Change border color when checked
+  // }
+ 
+  

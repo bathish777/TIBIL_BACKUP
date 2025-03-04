@@ -1,0 +1,54 @@
+<ion-footer class="footer">
+  <ion-tab-bar slot="bottom">
+    <!-- Dashboard Tab -->
+    <ion-tab-button (click)="selectTab('dashboard')" [selected]="cs.selectedTab === 'dashboard'">
+      <img 
+        *ngIf="cs.selectedTab === 'dashboard'" 
+        src="assets/yellowdash.png" 
+        class="tab-icon selected-icon"
+      />
+      <img 
+        *ngIf="cs.selectedTab !== 'dashboard'" 
+        src="assets/dashb.png" 
+        class="tab-icon" 
+      />
+      <ion-label [ngClass]="{'selected-text': cs.selectedTab === 'dashboard'}">
+        {{ 'DASHBOARD' | translate }}
+      </ion-label>
+    </ion-tab-button>
+
+    <!-- Transactions Tab -->
+    <ion-tab-button (click)="selectTab('transactions')" [selected]="cs.selectedTab === 'transactions'">
+      <img 
+        *ngIf="cs.selectedTab === 'transactions'" 
+        src="assets/transactions.png" 
+        class="tab-icon selected-icon" 
+      />
+      <img 
+        *ngIf="cs.selectedTab !== 'transactions'" 
+        src="assets/transaction1.png" 
+        class="tab-icon" 
+      />
+      <ion-label [ngClass]="{'selected-text': cs.selectedTab === 'transactions'}">
+        {{ 'TRANSACTIONS' | translate }}
+      </ion-label>
+    </ion-tab-button>
+
+    <!-- Settings Tab -->
+    <ion-tab-button (click)="selectTab('settings')" [selected]="cs.selectedTab === 'settings'">
+      <img 
+        *ngIf="cs.selectedTab === 'settings'" 
+        src="assets/Gear.png" 
+        class="tab-icon selected-icon" 
+      />
+      <img 
+        *ngIf="cs.selectedTab !== 'settings'" 
+        src="assets/setting.png" 
+        class="tab-icon" 
+      />
+      <ion-label [ngClass]="{'selected-text': cs.selectedTab === 'settings'}">
+        {{ 'SETTINGS' | translate }}
+      </ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-footer>

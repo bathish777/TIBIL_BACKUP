@@ -1,0 +1,346 @@
+/* Full Page Styling */
+#full-page {
+    position: relative;
+    height: 100%;
+    background-color:whitesmoke; /* White background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+  /* Pink Header Section */
+  #pink-container {
+   background-color: #131367;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  
+  /* Bank Info Section */
+  .bank-info {
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    width: 360px;
+    height: 45px;
+    top: 30px;
+    gap: 0px;
+    opacity: 0px;
+  
+  }
+  
+  .logo {
+    width: 50px; /* Logo size */
+    height: 40px;
+  }
+
+  .a {
+   font-family:'Karla';
+font-weight: 400;
+font-size: 12px;
+leading-trim: Cap height;
+line-height: 14.03px;
+letter-spacing: 0%;
+color: rgba(61, 61, 59, 1);
+
+
+  }
+  
+  .dashboard-text {
+   font-family: Philosopher;
+font-weight: 700;
+font-size: 16px;
+line-height: 17.92px;
+letter-spacing: 0%;
+color: rgba(255, 255, 255, 1);
+
+  
+  }
+  h1{
+    margin-top: 10px;
+
+  }
+  .back-icon {
+  
+    
+    
+    margin-right: 10px;
+    // vertical-align: middle;
+  }
+  
+  
+  /* QR Section */
+  .qr-section {
+    display: flex;
+    flex-direction: column; /* Stack QR image and text vertically */
+    align-items: center;
+    justify-content: center;
+    gap: 5px; /* Add spacing between image and text */
+    color: white;
+    text-align: center; /* Center-align the text */
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  /* QR Image */
+  .qr-section .qr-image {
+    width: 24px; /* Width as per the specified dimensions */
+    height: 31px; /* Height as per the specified dimensions */
+  }
+  
+  /* QR Text */
+  .qr-section .qr-text {
+    font-family: Hind;
+  font-size: 2px;
+  font-weight: 0px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #3D3D3B;
+  gap: 0px;
+  padding: 0px 0px 0px 0px; 
+  
+  
+  }
+  
+  
+  
+  
+  /* Notification Banner */
+  .notification-banner {
+    width: 120%;
+    background-color:#FCEDD3; /* Light yellow */
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-left: -10px;
+    height: auto;
+    height: 25px;
+  
+   
+  
+  }
+  
+  .close-icon {
+    cursor: pointer;
+    font-size: 20px;
+    color:#131367;
+    
+  }
+  
+  /* Date and Info Section */
+  #date-container {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+  height: 25px;
+  gap: 0px;
+  border-radius: 12.5px 0px 0px 0px;
+  
+  }
+  
+  .date-wrapper strong {
+    font-size: 15px;
+    color: #333;
+    margin: 0 10px;
+    border: 4px  0px rgb(51, 49, 49);
+    border-radius: 10px;
+
+  }
+  
+  /* Stats Cards */
+  #stats-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+    margin-left: 15px;
+  }
+  
+  
+  .stat-card {
+    border-radius: 10px;
+    padding: 20px;
+    width: 340px; /* Set specific width */
+    height: 265px; /* Set specific height */
+    position: relative; /* Allow positioning properties */
+    top: -15px; /* Adjust vertical position */
+    left: 10px; /* Adjust horizontal position */
+    gap: 0px; /* Remove spacing between elements inside */
+    border-radius: 10px; /* Rounded corners for top-left only */
+    display: flex; /* Flex layout for content alignment */
+    flex-direction: column; /* Arrange content vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    background: #f9f9f9; /* Light background color */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center-align text inside */
+  
+  }
+  
+  
+  .stat-icon {
+    font-size: 70px;
+    color:#707070;
+    margin-bottom: -10px;
+  }
+  
+  .stat-label {
+    font-size: 18px;
+    color: rgb(48, 44, 44);
+    font-weight: bold;
+    margin-bottom: 140px;
+  
+  }
+  
+  .stat-value {
+    font-size: 60px;
+    font-weight: bold;
+    color: #333;
+    margin-top: -80px;
+    
+  }
+  
+  /* Content area should be scrollable */
+  #full-page > ion-content {
+    flex-grow: 1; /* Allow content to take up remaining space */
+    overflow-y: auto; /* Allow scrolling if content exceeds screen height */
+  }
+  
+  /* Footer Navigation */
+  ion-footer.footer {
+    position: fixed; /* Fixed position at the bottom */
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+  }
+  
+  ion-tab-bar {
+    background-color: #ffffff;
+    margin-top: 0;
+  }
+  
+  ion-tab-button ion-icon {
+    font-size: 20px;
+    color: #131367;
+  }
+  
+  ion-tab-button[selected] ion-icon {
+    color: #131367;
+  }
+  
+  ion-tab-button[selected] ion-label {
+    font-weight: bold;
+    color:#131367;
+  }
+  
+  
+  ion-item {
+    --inner-padding-end: 10px;
+    --padding-start: 10px;
+    --border-radius: 10px;
+  }
+  
+  ion-label {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  ion-icon {
+    font-size: 24px;
+    color: #888;
+  }
+  .notification-banner {
+    background-color: #fcedd3;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .close-icon {
+    cursor: pointer;
+    font-size: 18px;
+    color: #131367;
+  }
+  .tab-icon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease; /* Add smooth transition for image scale */
+  }
+  
+
+
+  .selected-icon {
+    filter: brightness(1.2); /* Increase brightness or use any other effect */
+  }
+  
+  .selected-text {
+    color: #E0A409; /* Change the color of the text when selected */
+    
+  }
+  
+
+/* CSS for when the icon is selected */
+.tab-icon.selected-icon + ion-label {
+  color: #E0A409; /* Apply the color to the text when the icon is selected */
+}
+
+/* Default text color for the labels */
+ion-label {
+  color: #000; /* You can set a default color here */
+}
+
+
+
+
+  
+  .back-button {
+    position: absolute;
+    left: 0; /* Move the back button to the left */
+  }
+  
+
+
+
+
+
+
+
+  
+  
+  .tab-icon {
+    width: 24px; /* Set the icon size */
+    height: 24px;
+    transition: all 0.3s ease; /* Smooth transition for the selected state */
+  }
+  
+  ion-tab-button ion-label {
+    font-size: 12px; /* Adjust text size */
+  }
+  
+  ion-tab-button[selected] ion-label {
+    font-weight: bold;
+    color: #131367; /* Color for the selected tab text */
+  }
+  .custom-share-button {
+    border-radius: 12px; /* Adjust the border-radius to your preference */
+    --background: #4CAF50; /* Change the background color */
+    --color: white; /* Change the text color */
+    --border-radius: 12px; /* Ensure the border radius is consistent */
+  }
+  

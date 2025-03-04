@@ -1,0 +1,47 @@
+<ion-content [fullscreen]="true">
+  <!-- Pink Container - Hide when the current tab is 'dashboard' -->
+  <div id="pink-container" *ngIf="currentTab !== 'dashboard'">
+    <div class="bank-info">
+      <!-- Main Header with Back Arrow -->
+      <!-- <h1 (click)="goBack()" class="dashboard-text">
+        
+        <span>{{ currentHeader | translate }}</span>
+      </h1> -->
+      <!-- <h1 class="dashboard-text" (click)="goBack()">
+        <img src="assets/rightlogo.png" class="back-icon" alt="Back" />
+        {{  'LANGUAGE_PREFERENCE' | translate }}
+       
+      </h1> -->
+      <img src="assets/rightlogo.png" class="back-icon" alt="Back" (click)="goBack()"/>
+      <h1 class="dashboard-text" >
+      
+        {{ 'LANGUAGE_PREFERENCE' | translate }}
+      </h1>
+      
+      
+    </div>
+  </div>
+
+  <!-- Language Selection -->
+  <div *ngIf="currentTab === 'language-preference'">
+    <ion-list>
+      <ion-radio-group [(ngModel)]="selectedLanguage" (ngModelChange)="switchLanguage($event)">
+        <ion-item>
+          <ion-label class="a">{{ 'ENGLISH' | translate }}</ion-label>
+          <ion-radio slot="end" value="english"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label class="a">{{ 'HINDI' | translate }}</ion-label>
+          <ion-radio slot="end" value="hindi"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label class="a" >{{ 'KANNADA' | translate }}</ion-label>
+          <ion-radio slot="end" value="kannada"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </div>
+
+  
+ 
+</ion-content>

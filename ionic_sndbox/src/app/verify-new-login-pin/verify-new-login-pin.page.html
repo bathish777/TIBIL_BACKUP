@@ -1,0 +1,47 @@
+<ion-content [fullscreen]="true" id="full-page">
+  <!-- Pink Rounded Container -->
+  <div id="pink-container">
+    
+    <strong class="b">{{ 'VERIFY_NEW_PIN' | translate }}</strong>
+  </div>
+
+  <!-- MPIN Input Section -->
+  <div id="checkbox-container">
+    <!-- Instruction Text -->
+    <div class="instruction-container">
+      <ion-label class="instruction-text">
+        {{ 'RE_ENTER_PIN' | translate }}
+      </ion-label>
+    </div>
+
+    <!-- MPIN Input Boxes -->
+    <div class="otp-input-container">
+      <ng-otp-input 
+      class="a" [(ngModel)]="otp" [config]="{ length: 4, isPasswordInput : true, allowNumbersOnly: true, containerClass:'input-container', inputStyles: {
+        'width': '50px',
+        'height': '40px',
+        'margin': '0px' 
+  
+  
+      } }"
+        (onInputChange)="onOtpInputChange($event)">
+      </ng-otp-input>
+    </div>
+    <ion-text class="span" color="danger" *ngIf="errorMessage">
+      {{ 'ERROR.REENTER_VALID_PIN' | translate }}
+    </ion-text>
+    
+  </div>
+
+
+  <div id="sign-in-button">
+    <!-- <button (click)="createNewPin()">
+      {{ 'CREATE_NEW_PIN.NEXT' | translate }}
+      <img src="assets/arrow.png" alt="Arrow" class="sign-in-icon" />
+    </button> -->
+    <button (click)="verifyLoginPin()" class="next-button">
+      {{ 'CONFIRM'  | translate }}
+      <img src="assets/arrow.png" alt="Next Icon" class="next-icon" />
+    </button>
+  </div>
+</ion-content>

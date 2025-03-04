@@ -1,0 +1,288 @@
+/* Full Page Styling */
+#full-page {
+  position: relative; /* Set the parent container to relative */
+  height: 100%; /* Ensure it takes full viewport height */
+  overflow: hidden; /* Prevent the content from overflowing */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 270px;
+  margin-bottom: 120px;
+  position: fixed;
+}
+.b {
+  font-family:'Philosopher';
+  font-size: 28px; /* Set the font size */
+  font-weight: 700; /* Set the font weight */
+  line-height: 31.36px; /* Set the line height */
+  text-align: center; /* Align text to the center */
+  text-underline-position: from-font; /* Position underline based on font metrics */
+  text-decoration-skip-ink: none; /* Ensure underline does not skip over ink */
+  align-items: center;
+ color:white;
+}
+.account-id {
+  font-family: 'Karla';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.7px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(61, 61, 59, 1)
+}
+
+/* Pink Rounded Container */
+#pink-container {
+  width: 100%;
+  height: 230px;
+  background: rgba(19, 19, 103, 1);
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:0px 10px;
+ 
+  font-size: 24px;
+  font-weight: bold;
+}
+#sign-in-button .next-button {
+  background-color: #0a0a62 !important;
+  color: #ffffff !important;
+  border-radius: 40px !important; /* More curvy edges */
+}
+
+/* Checkbox Container for Account Selection */
+#checkbox-container {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 15px;
+ 
+}
+
+.account-item ion-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.03px;
+  color: rgba(61, 61, 59, 1);
+  font-family:'Karla';
+}
+
+/* Account Name */
+.account-id {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18.7px;
+  color: rgba(61, 61, 59, 1);
+  font-family:'Karla';
+}
+
+/* Account ID */
+.account-id2 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.37px;
+  color: rgba(61, 61, 59, 1);
+  font-family:'Karla';
+}
+
+/* Expanded state for the checkbox container */
+#checkbox-container.expanded {
+  height: 120px; /* Expanded height */
+}
+.account-label {
+  
+  font-family: 'Karla';
+font-weight: 400;
+font-size: 10px;
+
+line-height: 11.69px;
+letter-spacing: 0%;
+color: rgba(152, 152, 149, 1);
+
+
+}
+.account-details{
+  p{
+    font-size: 12px;
+    font-weight:400;
+    font-family:'Karla';
+    color:rgba(61, 61, 59, 1);
+  }
+}
+
+/* Account Holder Items */
+.accountholders {
+ 
+  display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 300px;
+      justify-content: space-between;
+      padding: 10px 10px;
+      background-color: #fff;
+      border-bottom: 1px solid rgb(234, 237, 243);
+}
+  
+  .account-item{
+    display: flex;
+        justify-content: flex-start;
+        width: 250px;
+        ion-radio{
+         margin-top: 18px;
+         margin-right:10px
+
+        }
+  } 
+
+ion-radio-group{
+  box-shadow: 0 0px 2px rgba(234, 237, 243, 1);
+  margin-top: 25px;
+}
+
+/* Checkbox Customization */
+ion-checkbox.custom-checkbox {
+  --background: transparent;
+  --border-radius: 50%; /* Circular checkbox */
+  --size: 24px;
+  --border-width: 2px;
+  --border-color: #131367; /* Pink border */
+  --background-checked: #131367; /* Filled pink when checked */
+  --checkmark-color: white; /* White checkmark */
+  --checkmark-width: 16px;
+  --checkmark-height: 16px;
+  
+
+
+}
+#sign-in-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute; /* Position similar to the home page */
+  width: 315px;
+  height: 45px;
+  top: 645px; /* Match placement with home page */
+  left: 23px;
+  gap: 0;
+}
+
+#sign-in-button button {
+   font-family: 'Karla';
+ font-size: 16px; /* Font size */
+  font-weight: 700; /* Bold text */
+  width: 100%; /* Full width of the parent */
+  height: 100%; /* Full height of the parent */
+  background: rgba(19, 19, 103, 1);
+  color: #ffffff; /* White text */
+  border: none; /* Remove default borders */
+  border-radius: 40px; /* Curved edges */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  padding: 12px; /* Inner padding for better appearance */
+
+}
+
+.next-button {
+  font-family:'Karla';
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #007aff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  display: flex; /* Enables flex layout */
+  align-items: center; /* Align items vertically in the center */
+  justify-content: center; /* Center content horizontally */
+  gap: 8px; /* Add space between text and icon */
+  cursor: pointer;
+  outline: none;
+}
+
+.text {
+  margin: 0; /* Prevents unintended movement */
+}
+
+.next-icon {
+  width: 16px; /* Adjust size as needed */
+  height: 16px;
+  position: relative;
+  top: 0px; /* Move the arrow slightly upwards without affecting the text */
+}
+/* General Text Styling */
+strong {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.5;
+ color: rgba(61, 61, 59, 1)
+}
+
+
+/* Placeholder for Instruction Text */
+.instruction-text {
+  font-size: 16px;
+  color: #333; /* Dark gray text */
+  font-weight: 500;
+  padding: 10px;
+  text-align: center;
+}
+.small-checkbox {
+  margin-right: 5px;
+}
+
+terms-text {
+  margin-right: 5px;
+  color: #868683;
+ 
+}
+
+
+/* For Android devices with a max-width of 768px (common for tablets and smaller screens) */
+@media (max-width: 768px) and (min-width: 550px) {
+  /* Full Page */
+  #full-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    padding: 0 10px; /* Add some padding for better spacing */
+  }
+
+  /* Pink Rounded Container */
+  #pink-container {
+    width: 360px; /* Reduce width to fit smaller screens */
+    height: 230x; /* Adjust height for smaller screens */
+   
+    
+  }
+
+  /* Checkbox Container */
+  #checkbox-container {
+    margin-top: 180px; /* Adjust margin to position elements better */
+    padding: 30px;
+    width: 100%;
+    max-width: 90%; /* Adjust width for mobile view */
+  }
+
+}
+
+/* Change hover background color for ion-item */
+ion-item.accountholders {
+  --background-hover: #f0f0 !important; /* Change to your preferred color */
+}
+
+/* Optional: Change background color for selected radio item */
+ion-radio-group ion-item.accountholders {
+  --background: #ffffff; /* Default background */
+}
+
+ion-radio-group ion-item.accountholders:hover {
+  --background: #f0f0f0 !important; /* Custom hover effect */
+}

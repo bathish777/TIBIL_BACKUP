@@ -1,0 +1,249 @@
+
+#full-page {
+  position: relative; /* Set the parent container to relative */
+  height: 100%; /* Ensure it takes full viewport height */
+  overflow: hidden; /* Prevent the content from overflowing */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.b {
+  font-family: Philosopher;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 31.36px;
+  letter-spacing: 0%;
+  text-align: center;  
+  align-items: center;
+  
+}
+
+/* Pink Rounded Container */
+#pink-container {
+  width: 100%;
+  height: 230px;
+ 
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(19, 19, 103, 1);     color: rgba(255, 255, 255, 1);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Logo Styling */
+.logo {
+  margin-right: 270px;
+  margin-bottom: 120px;
+  position: fixed;
+}
+
+
+#checkbox-container {
+  display: flex
+;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+  .Vpa-container{
+    
+    width: 310px;
+    margin-top: 25px;
+    box-shadow: 0 0 2px #eaedf3;
+    border: rgb(234, 237, 243);
+
+    .vpa-item{
+     
+    display: flex
+    ;
+        flex-direction: row;
+        align-items: center;
+        width: 310px;
+        justify-content: flex-start;
+        height: 76px;
+        padding-left: 10px;
+        background-color: #fff;
+        border-bottom: 1px solid rgb(234, 237, 243);
+       ion-radio{
+        margin-right:15px;
+       }
+    
+    }
+  }
+  
+.next-button {
+  font-family:'Karla', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #007aff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  display: flex; /* Enables flex layout */
+  align-items: center; /* Align items vertically in the center */
+  justify-content: center; /* Center content horizontally */
+  gap: 8px; /* Add space between text and icon */
+  cursor: pointer;
+  outline: none;
+}
+
+.text {
+  margin: 0; /* Prevents unintended movement */
+}
+
+.next-icon {
+  width: 16px; /* Adjust size as needed */
+  height: 16px;
+  position: relative;
+  top: 0px; /* Move the arrow slightly upwards without affecting the text */
+}
+
+/* VPA Holder Styling */
+.vpaholders {
+
+  display: flex;
+      flex-direction: column;
+      height: 35px;
+      justify-content: space-between;
+  .vpa-name{
+    font-family: 'Karla';
+font-weight: 700;
+font-size: 16px;
+leading-trim: Cap height;
+line-height: 18.7px;
+letter-spacing: 0%;
+color:rgba(61, 61, 59, 1);
+  }
+  .vpa-id{
+    font-family: 'Karla';
+font-weight: 400;
+font-size: 14px;
+leading-trim: Cap height;
+line-height: 16.37px;
+letter-spacing: 0%;
+color:rgba(61, 61, 59, 1);
+  }
+
+}
+
+/* Customize IonCheckbox for VPA Selection */
+ion-checkbox.custom-checkbox {
+  --background: transparent;
+  gap: 0px;
+  --border-radius: 50%; /* Rounded checkboxes */
+  --size: 24px; /* Adjust size */
+  --border-width: 2px; /* Thickness of the border */
+  --border-color: #131367; /* Pink border color */
+  --background-checked: #131367; /* Pink background when checked */
+  --checkmark-color: white; /* White checkmark color */
+  --checkmark-width: 16px;
+  --checkmark-height: 16px;
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+ion-checkbox.custom-checkbox:hover {
+  transform: scale(1.1); /* Enlarge on hover */
+}
+
+ion-checkbox.custom-checkbox[checked] {
+  --background: #131367; /* Pink when checked */
+}
+
+/* Terms and Conditions */
+#terms-container {
+  width: 100%; /* Full width for alignment */
+  margin-top: 15px; /* Space from the checkbox container */
+  font-size: 14px; /* Text size */
+  color: #868683; /* Gray text color */
+  text-align: center; /* Center alignment */
+}
+
+/* Sign-In Button */
+#sign-in-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute; /* Position similar to the home page */
+  width: 315px;
+  height: 45px;
+  top: 645px; /* Match placement with home page */
+  left: 22px;
+  gap: 0;
+}
+
+#sign-in-button button {
+  width: 100%; /* Full width of the parent */
+  height: 100%; /* Full height of the parent */
+  background-color: #0a0a62; /* Match home page background color */
+  color: #ffffff; /* White text */
+  border: none; /* Remove default borders */
+  border-radius: 40px; /* Curved edges */
+  font-family:'Karla';
+  font-size: 16px; /* Font size */
+   font-weight: 700; /* Bold text */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  padding: 12px; /* Inner padding for better appearance */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+#sign-in-button button:hover {
+  background-color: #050554; /* Slightly darker on hover */
+}
+
+/* General Text Styling */
+strong {
+  font-size: 22px; /* Match Home Page font size */
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.5; /* Improve text readability */
+}
+
+/* Placeholder for Instruction Text */
+.instruction-text {
+  font-size: 16px;
+  color: #333; /* Dark gray text */
+  font-weight: 500;
+  padding: 10px;
+  text-align: center;
+}
+
+.vpa-id {
+  font-family: ' Karla';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.7px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+/* Media Queries for Android Devices */
+@media (max-width: 768px) and (min-width: 550px) {
+  /* Full Page */
+  #full-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    padding: 0 10px; /* Add some padding for better spacing */
+  }
+
+  /* Pink Rounded Container */
+  #pink-container {
+    width: 350px; /* Reduce width to fit smaller screens */
+    height: 500px; /* Adjust height for smaller screens */
+    top: -90px; /* Adjust position */
+    left: -70px; /* Align it properly */
+  }
+
+  /* Checkbox Container */
+  #checkbox-container {
+    margin-top: 180px; /* Adjust margin to position elements better */
+    padding: 30px;
+    width: 100%;
+    max-width: 90%; /* Adjust width for mobile view */
+  }
+}

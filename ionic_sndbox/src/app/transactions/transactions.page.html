@@ -1,0 +1,85 @@
+<div>
+  <!-- Header Section -->
+  <div id="pink-container" class="pink-container">
+    <div class="bank-info">
+      <h1 class="dashboard-text">{{ currentHeader | translate }}</h1>
+    </div>
+    <div class="qr-section" (click)="navigateTo()">
+      <img src="assets/qr.png" alt="QR Code" class="qr-image" />
+    </div>
+  </div>
+
+  <!-- Notification Banner -->
+  <div class="notification-banner" *ngIf="showBanner">
+    <span class="banner">{{ 'SHOWS_ONLY_TODAYS_TRANSACTIONS' | translate }}</span>
+    <img src="assets/close.png" class="close-icon" alt="Close" (click)="dismissNotification()" />
+  </div>
+
+  <!-- Date Container -->
+  <div id="date-container">
+    <div class="date-wrapper">
+      <span class="d">{{ 'AS_OF' | translate }}</span>
+      <div class="rectangle">
+        <strong class="date">{{ fullDate }}</strong>
+      </div>
+      <span class="d">({{ 'TODAY' | translate }})</span>
+    </div>
+  </div>
+
+  <!-- Statistics Section -->
+  <div id="stats-container">
+    <div class="stat-card">
+      <span class="stat-icon">#</span>
+      <span class="stat-label">{{ 'TOTAL_TRANSACTIONS' | translate }}</span>
+      <span class="stat-value">{{ totalTransactions }}</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-icon">₹</span>
+      <span class="stat-label">{{ 'TOTAL_AMOUNT' | translate }}</span>
+      <span class="stat-value">{{ totalAmount }}</span>
+    </div>
+  </div>
+
+  <!-- Transaction List Section -->
+  <div class="scrollable-list">
+    <ion-list>
+      <ion-item *ngFor="let transaction of transactionList" lines="none">
+        <!-- Avatar -->
+        <div class="avatar" [ngStyle]="{ 'background-color': transaction.color }">
+          {{ transaction.name.charAt(0) }}
+        </div>
+
+        <!-- Transaction Details -->
+        <ion-label>
+          <h2 class="a">{{ transaction.name }}</h2>
+          <p class="b">{{ transaction.date }}</p>
+        </ion-label>
+
+        <!-- Transaction Amount -->
+        <div class="c" slot="end">{{ transaction.amount | currency: 'INR' }}</div>
+      </ion-item>
+    </ion-list>
+
+    <!-- Infinite Scroll -->
+    <ion-infinite-scroll threshold="100px" (ionInfinite)="fetchTransactions($event)" *ngIf="hasMore">
+      <ion-infinite-scroll-content>
+        <!-- Show loading spinner only when isLoading is true -->
+         <div class="z">
+          <ion-spinner *ngIf="isLoading"  name="bubbles"></ion-spinner>
+         </div>
+       
+        <span *ngIf="isLoading">{{ 'LOADING_TRANSACTIONS' | translate }}</span>
+      </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+
+    <!-- Show a message when there are no more transactions to load -->
+    <div *ngIf="!hasMore" class="no-more-transactions">
+      {{ 'NO_MORE_TRANSACTIONS' | translate }}
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <ion-footer class="footer">
+    <app-tab-bar></app-tab-bar>
+  </ion-footer>
+</div>

@@ -1,0 +1,59 @@
+<ion-content [fullscreen]="true" id="full-page">
+  <!-- Pink Rounded Container -->
+  <div id="pink-container">
+   
+    <strong class="b">{{ 'OTP_VERIFICATION.TITLE' | translate }}</strong>
+  </div>
+
+  <!-- OTP Input Section -->
+  <div id="checkbox-container">
+    <!-- Instruction Text -->
+    <div class="instruction-container">
+      <ion-label class="instruction-text">
+        {{ 'OTP_VERIFICATION.INSTRUCTION' | translate }}
+      </ion-label>
+    
+    </div>
+
+    <!-- OTP Input Box using ng-otp-input -->
+    <ng-otp-input  #otpInput
+    class="a" [(ngModel)]="otp" [config]="{ length: 6, allowNumbersOnly: true, containerClass:'input-container', inputStyles: {
+      'width': '40px',
+      'height': '40px',
+      'margin': '0px' 
+
+
+    } }"
+      (onInputChange)="onOtpInputChange($event)">
+    </ng-otp-input>
+
+    <!-- Error Message -->
+    <ion-text class="span" color="danger" *ngIf="errorMessage">
+      {{ errorMessage }}
+    </ion-text>
+
+    <div id="resend-otp-container">
+      <!-- Timer Display -->
+      <p *ngIf="resendDisabled" class="resend-timer">
+        {{ 'OTP_VERIFICATION.RESEND_IN' | translate: { time: formatTime(resendTimer) } }}
+      </p>
+    
+      <!-- Resend Button -->
+      <button 
+        (click)="resendOtp($event)" 
+        [disabled]="resendDisabled" 
+        class="resend-button">
+        {{ 'OTP_VERIFICATION.RESEND_OTP' | translate }}
+      </button>
+    </div>
+    
+  </div>
+
+  <!-- Next Button -->
+  <div id="sign-in-button">
+    <button (click)="verifyOtp()" class="next-button">
+      {{ 'OTP_VERIFICATION.NEXT' | translate }}
+      <img src="assets/arrow.png" alt="Next Icon" class="next-icon" />
+    </button>
+  </div>
+</ion-content>

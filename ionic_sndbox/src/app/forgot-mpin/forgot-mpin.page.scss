@@ -1,0 +1,231 @@
+/* Full Page Styling */
+#full-page {
+  position: relative; /* Set the parent container to relative */
+  height: 100%; /* Ensure it takes full viewport height */
+  overflow: hidden; /* Prevent the content from overflowing */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.b {
+  font-family: "Philosopher";
+  font-size: 28px; /* Set the font size */
+  font-weight: 700; /* Set the font weight */
+  line-height: 31.36px; /* Set the line height */
+  text-align: center; /* Align text to the center */
+  text-underline-position: from-font; /* Position underline based on font metrics */
+  text-decoration-skip-ink: none; /* Ensure underline does not skip over ink */
+  align-items: center;
+  
+}
+
+.next-button {
+  font-family:'Karla';
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #007aff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  display: flex; /* Enables flex layout */
+  align-items: center; /* Align items vertically in the center */
+  justify-content: center; /* Center content horizontally */
+  gap: 8px; /* Add space between text and icon */
+  cursor: pointer;
+  outline: none;
+}
+
+.text {
+  margin: 0; /* Prevents unintended movement */
+}
+
+.next-icon {
+  width: 16px; /* Adjust size as needed */
+  height: 16px;
+  position: relative;
+  top: 0px; /* Move the arrow slightly upwards without affecting the text */
+}
+#pink-container {
+  width: 100%;
+  height: 230px;
+  background: rgba(19, 19, 103, 1);
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Checkbox Container for Account Selection */
+#checkbox-container {
+  
+  display: flex;
+  flex-direction: column;
+  margin-top:20px;
+  justify-content: center; /* Center-align content vertically */
+  align-items: center; /* Stretch items horizontally */
+}
+
+.otp-input-container{
+  margin-top:20px;
+
+}
+.a{
+  margin-top:20px;
+
+}
+.logo {
+  margin-right: 270px;
+  margin-bottom: 120px;
+  position: fixed;
+}
+
+.response-id-text {
+  margin-left: 100px;
+}
+::ng-deep .n-o-c {
+  display: flex;
+  align-items: center;
+  width: 245px;
+  justify-content: space-between;
+
+}
+
+
+.input-container {
+  display: flex
+;
+  align-items: center;
+  width: 245px;
+  justify-content: space-between;
+}
+
+/* Instruction Text */
+   
+.instruction-text {
+  color: rgba(61, 61, 59, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 100%;
+  padding: 5px;
+  text-align: center;
+  font-family: 'Karla';
+font-size: 14px;
+font-weight: 400;
+line-height: 16.37px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+.otp-input {
+  margin: 0 .51rem;
+  width: 40px;
+  height: 40px;
+}
+.q{
+  margin-top:50px ;
+  margin-left: 50px;
+  position: fixed;
+}
+
+/* Resend OTP Section */
+.resend-otp {
+  text-align: center;
+  font-size: 14px;
+  color: gray; /* Pink color for the link */
+  font-weight: bold;
+  transition: color 0.3s ease;
+ 
+  font-family:'Karla';
+ 
+font-size: 14px;
+font-weight: 700;
+line-height: 16.37px;
+text-align: center;
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+margin-top:20px;
+
+}
+
+.resend-otp a {
+  transition: color 0.3s ease;
+  color: rgba(19, 19, 103, 1);
+ 
+  font-family:'Karla';
+font-size: 14px;
+font-weight: 700;
+line-height: 16.37px;
+text-align: left;
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+
+
+.resend-otp a.disabled {
+  color: #ccc; /* Disable link color */
+  pointer-events: none; /* Disable interaction */
+}
+
+
+#sign-in-button button {
+  width: 100%; /* Full width of the parent */
+  height: 100%; /* Full height of the parent */
+  background-color: #0a0a62; 
+
+/* Match home page background color */
+  color: #ffffff; /* White text */
+  border: none; /* Remove default borders */
+  border-radius: 40px; /* Curved edges */
+  font-family:'Karla';
+ font-size: 16px; /* Font size */
+  font-weight: 700; /* Bold text */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  padding: 12px; /* Inner padding for better appearance */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+} /* Sign-In Button */
+#sign-in-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute; /* Position similar to the home page */
+  width: 315px;
+  height: 45px;
+  top: 645px; /* Match placement with home page */
+  left: 23px;
+  gap: 0;
+  // margin-top: 40px;
+}
+
+#sign-in-button button:hover {
+  background-color: #050554; /* Slightly darker on hover */
+}
+
+
+.span {
+  margin-top: 10px;
+  position: relative;
+  
+}
+#resend-otp a.disabled {
+  pointer-events: none;
+  color: gray;
+  text-decoration: none;
+}
+
+
+
+.sign-in-button {
+  text-align: center;
+
+ 
+}
+

@@ -1,0 +1,40 @@
+<ion-content [fullscreen]="true" id="full-page">
+  <!-- Pink Rounded Container -->
+  <div id="pink-container">
+ 
+    <strong class="b">
+      {{ 'VPA_SELECTION.HEADER' | translate }}
+    </strong>
+  </div>
+
+  <div id="checkbox-container">
+    <!-- Display Customer Name and VPA -->
+    <div *ngIf="customerName && customerVpa" class="Vpa-container">
+    
+      <ion-radio-group [(ngModel)]="selectedVpaId" (ngModelChange)="onVpaSelected($event)">
+        <div *ngFor="let vpa of vpas" class="vpa-item">
+          <ion-radio slot="start" [value]="vpa.id"></ion-radio>
+          <div lines="none" class="vpaholders">
+            <ion-label class="vpa-name">{{ vpa.name }}</ion-label>
+            <ion-label class="vpa-id">{{ vpa.id }}</ion-label>
+          </div>
+        </div>
+      </ion-radio-group>
+      
+      
+    </div>
+
+    <!-- If no customer data, show error message -->
+    <ng-template #noVpas>
+      <p>{{ errorMessage || ('VPA_SELECTION.NO_VPAS' | translate) }}</p>
+    </ng-template>
+  </div>
+
+  <!-- Proceed Button -->
+  <div id="sign-in-button">
+    <button (click)="navigateToVerification()" class="next-button">
+      {{ 'BUTTON.NEXT' | translate }}
+      <img src="assets/arrow.png" alt="{{ 'BUTTON.NEXT_ICON_ALT' | translate }}" class="next-icon" />
+    </button>
+  </div>
+</ion-content>

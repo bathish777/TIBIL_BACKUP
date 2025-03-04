@@ -1,0 +1,333 @@
+/* Full Page Styling */
+#full-page {
+  position: relative;
+  height: 100%;
+  background-color: whitesmoke; /* White background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.banner{
+  margin-left: 10px;
+  }
+/* Pink Header Section */
+#pink-container {
+  background-color: #131367;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 45px;
+}
+.d{
+  font-family: 'Karla';
+font-weight: 400;
+font-size: 14px;
+leading-trim: Cap height;
+line-height: 16.37px;
+letter-spacing: 0%;
+color: rgba(19, 19, 103, 1);
+
+}
+/* Bank Info Section */
+.bank-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  margin-right: 0px;
+  width: 360px;
+  top: 30px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.logo {
+  width: 50px; /* Logo size */
+  height: 40px;
+}
+
+
+.dashboard-text {
+  font-family: Philosopher;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 17.92px;
+  letter-spacing: 0%;
+  color: white;
+  margin: 40px;
+  gap: 15px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-left: 120px;
+  font-family:'Karla';
+}
+
+
+/* QR Section */
+.qr-section {
+  display: flex;
+  flex-direction: column; /* Stack QR image and text vertically */
+  align-items: center;
+  justify-content: center;
+  gap: 5px; /* Add spacing between image and text */
+  color: white;
+  text-align: center; /* Center-align the text */
+  font-size: 12px;
+  cursor: pointer;
+  font-family:'Karla';
+}
+
+/* QR Image */
+.qr-section .qr-image {
+  width: 24px; /* Width as per the specified dimensions */
+  height: 31px; /* Height as per the specified dimensions */
+}
+
+/* QR Text */
+.qr-section .qr-text {
+  font-family: Hind;
+  font-size: 2px;
+  font-weight: 0px;
+  text-align: left;
+  font-family:'Karla';
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #3d3d3b;
+  gap: 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.notification-banner {
+  color: #3d3d3b;
+  background: #fcedd3;
+  display: flex
+;
+  justify-content: space-between;
+  align-items: center;
+  font-family: ' Karla';
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 11.69px;
+  text-align: left;
+  text-underline-position: from-font;
+  height: 25px;
+  text-decoration-skip-ink: none;
+}
+
+.close-icon {
+  cursor: pointer;
+  font-size: 20px;
+  color: #131367;
+  margin-right: 5px;
+}
+
+
+#date-container{
+    text-align: center;
+    display: flex
+; 
+font-family:'Karla';
+    font-size: 16px;
+    color: #333;
+    height: 50px;
+    gap: 0px;
+    border-radius: 12.5px 0 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.date-wrapper strong {
+  width: 230px;
+height: 25px;
+top: 115px;
+left: 66px;
+gap: 0px;
+border-radius: 4px 0px 0px 0px;
+border: 1px 0px 0px 0px;
+
+
+}
+
+/* Stats Cards */
+#stats-containers {
+  height: calc(100vh - (45px + 25px + 55px + 50px));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+
+.date{
+  font-family: 'Karla';
+  font-weight: 700;
+  font-size: 12px;
+  leading-trim: Cap height;
+  line-height: 14.03px;
+  letter-spacing: 0%;
+  color: rgba(61, 61, 59, 1);
+  
+
+}
+ .rectangle {
+  display: inline-block;
+  padding: 5px px;
+  border: 1px solid rgba(168, 168, 239, 1);
+  border-radius: 4px;
+  height: 25px;
+  background: #f7f9fd;
+  margin: 0 5px;
+  font-size: 12px;
+  padding: 5px 0px;
+  font-family:'Karla';
+}
+
+.stat-card{
+  
+  width: 340px;
+  height: 260px;
+  gap: 0px;
+  border-radius: 10px;
+  display: flex
+;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  box-shadow: 0 0px 4px #0000001a;
+  text-align: center;
+  justify-content: space-around;
+}
+.date{
+  padding: 5px;
+}
+
+.date-rectangle {
+  width: 140px;
+  height: 25px;
+  position: absolute;
+  top: -25px; /* Adjusts the position above the text */
+  left: 104px;
+  border-radius: 4px 0px 0px 0px;
+  border: 1px solid transparent; /* Add border style */
+  background-color: #A8A8EF;
+  opacity: 0.5; /* Slightly transparent */
+  z-index: -1; /* Push it behind the text */
+}
+
+
+.stat-icon {
+  font-size: 70px;
+  color: #A8A8EF;
+  font-family:'Karla';
+  margin-bottom: -10px;
+}
+
+.stat-label {
+  font-family: 'Philosopher';
+font-weight: 700;
+font-size: 18px;
+line-height: 20.16px;
+letter-spacing: 0%;
+text-align: center;
+color: rgba(61, 61, 59, 1);
+
+}
+
+.stat-value {
+    font-family:'Karla';
+font-weight: 500;
+font-size: 75px;
+leading-trim: Cap height;
+line-height: 87.68px;
+letter-spacing: 0%;
+text-align: center;
+color: rgba(19, 19, 103, 1);
+
+}
+
+/* Content area should be scrollable */
+#full-page > ion-content {
+  flex-grow: 1; /* Allow content to take up remaining space */
+  overflow-y: auto; /* Allow scrolling if content exceeds screen height */
+}
+
+/* Footer Navigation */
+ion-footer.footer {
+  position: fixed; /* Fixed position at the bottom */
+  bottom: 0;
+  width: 100%;
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
+}
+
+ion-tab-bar {
+  background-color: #ffffff;
+  margin-top: 0;
+  height: 50px;
+}
+
+ion-tab-button ion-icon {
+  font-size: 20px;
+  color: #A8A8EF;
+  ;
+}
+
+ion-tab-button[selected] ion-icon {
+  color: #131367;
+}
+
+ion-tab-button[selected] ion-label {
+  font-weight: bold;
+  color: #131367;
+}
+
+
+ion-item {
+  --inner-padding-end: 10px;
+  --padding-start: 10px;
+  --border-radius: 10px;
+}
+
+ion-label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+ion-icon {
+  font-size: 24px;
+  color: #888;
+}
+
+.close-icon {
+  cursor: pointer;
+  font-size: 18px;
+  color: #131367;
+}
+
+.tab-icon {
+  width: 24px; /* Set the icon size */
+  height: 24px;
+  transition: all 0.3s ease; /* Smooth transition for the selected state */
+}
+
+.tab-icon.selected {
+  filter: none; /* Restore color for the selected icon */
+  transform: scale(1.2); /* Slightly enlarge the selected icon */
+  background-color: orange;
+}
+
+ion-tab-button ion-label {
+  font-size: 12px; /* Adjust text size */
+}
+
+ion-tab-button[selected] ion-label {
+  font-weight: bold;
+  color: #131367; /* Color for the selected tab text */
+}

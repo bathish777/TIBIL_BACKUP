@@ -1,0 +1,266 @@
+/* Ensure the entire page fits without unexpected scrolling */
+#full-page {
+  position: relative;
+  height: 100%;
+  background-color: whitesmoke; /* White background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+/* Pink Header Section */
+#pink-container {
+  background-color: #131367;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* QR Section */
+.qr-section {
+  display: flex;
+  flex-direction: column; /* Stack QR image and text vertically */
+  align-items: center;
+  justify-content: center;
+  gap: 5px; /* Add spacing between image and text */
+  color: white;
+  text-align: center; /* Center-align the text */
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* QR Image */
+.qr-section .qr-image {
+  width: 24px; /* Width as per the specified dimensions */
+  height: 31px; /* Height as per the specified dimensions */
+}
+.qr-section .qr-text {
+  // // font-size: 14px; /* Adjust size for better visibility */
+  // // font-weight: bold; /* Make the text stand out */
+  // // white-space: nowrap; /* Prevent text from wrapping */
+  //  overflow: h#3D3D3Bidden;  Handle any potential overflow */
+  // // text-overflow: ellipsis; /* Add ellipsis if the text is too long */
+
+  font-family: Hind;
+  font-size: 2px;
+  font-weight: 0px;
+  // line-height: 16.01px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #3d3d3b;
+  gap: 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+/* Notification Banner */
+.notification-banner {
+  width: 120%;
+  background-color: #fcedd3; /* Light yellow */
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin-left: -10px;
+  height: auto;
+  height: 25px;
+}
+
+.close-icon {
+  cursor: pointer;
+  font-size: 20px;
+  color: #131367;
+}
+
+/* Date and Info Section */
+#date-container {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  // width: 229px;
+  height: 25px;
+  // top: 115px;
+  // left: 66px;
+  gap: 0px;
+  border-radius: 12.5px 0px 0px 0px;
+  // border: 1px 0px 0px 0px;
+  // opacity: 0px;
+}
+
+.date-wrapper strong {
+  font-size: 15px;
+  color: #333;
+  margin: 0 10px;
+  border: 4px 0px rgb(51, 49, 49);
+  border-radius: 10px;
+  // border-radius: 4px 0px 0px 0px;
+}
+
+
+/* Bank Info Section */
+.bank-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  margin-right: 0px;
+  width: 360px;
+  height: 45px;
+  top: 30px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.logo {
+  width: 50px; /* Logo size */
+  height: 40px;
+}
+
+// .dashboard-text {
+//   font-size: 20px;
+//   font-weight: bold;
+//   color: white;
+//   margin: 40px;
+//   gap: 15px;
+//   font-family: Playfair Display;
+//   font-size: 16px;
+//   font-weight: 700;
+//   line-height: 21.33px;
+//   text-align: left;
+//   text-underline-position: from-font;
+//   text-decoration-skip-ink: none;
+//   margin-left: 120px;
+// }
+
+.dashboard-text {
+  font-family: Philosopher;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 17.92px;
+  letter-spacing: 0%;
+  
+
+
+
+
+
+  color: white;
+  margin: 40px;
+  gap: 15px;
+  
+  
+  
+  
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-left: 120px;
+}
+
+/* Ensure #transactions-page handles its own scrolling */
+#transactions-page {
+  flex-grow: 1; /* Take up remaining space */
+  overflow-y: auto; /* Allow vertical scrolling inside this container */
+}
+
+// /* Adjust stats-container to avoid conflicting positioning */
+// #stats-container {
+//   position: sticky; /* Keep it within the viewport without fixed positioning */
+//   top: 0;
+//   background-color: whitesmoke; /* Match the page background */
+//   z-index: 1;
+// }
+#stats-container {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 30px;
+}
+/* Ensure transaction list is scrollable */
+#transaction-list {
+  margin-top: 20px; /* Clear space from the header */
+  padding: 0 16px;
+  overflow-y: auto; /* Enable vertical scrolling for the list */
+  max-height: calc(100vh - 120px); /* Adjust height to fit within the page */
+}
+.avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #4caf50; /* Change this color as needed */
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px; /* Space between avatar and name */
+  text-transform: uppercase; /* Ensure the letter is uppercase */
+}
+
+.stat-card1 {
+  border-radius: 10px;
+  padding: 20px;
+  width: 165px; /* Set specific width */
+  height: 80px; /* Set specific height */
+  position: relative; /* Allow positioning properties */
+  top: -15px; /* Adjust vertical position */
+  left: 10px; /* Adjust horizontal position */
+  gap: 0px; /* Remove spacing between elements inside */
+  border-radius: 10px; /* Rounded corners for top-left only */
+  // opacity: 0; /* Fully transparent initially */
+  display: flex; /* Flex layout for content alignment */
+  flex-direction: column; /* Arrange content vertically */
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  background: #f9f9f9; /* Light background color */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center; /* Center-align text inside */
+}
+
+#stats-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 20px 0;
+  padding: 0 16px;
+}
+
+.stat-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.stat-label {
+  font-size: 1em;
+  color: #888;
+}
+
+.stat-value {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+#transaction-list {
+  margin: 20px 16px;
+}
+
+.scrollable-list {
+  margin-top: 120px; /* Adjust based on the height of the stats container */
+  height: calc(100vh - 120px); 
+  // position: fixed;
+  overflow-y: auto;
+  
+}  

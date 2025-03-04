@@ -1,0 +1,51 @@
+<ion-content [fullscreen]="true" id="full-page">
+  <div id="pink-container">
+    <div class="bank-info">
+      <h1 class="dashboard-text">{{ currentHeader | translate }}</h1> <!-- Translatable header -->
+    </div>
+
+    <!-- QR Section - Visible on Dashboard and Transactions tabs -->
+    <div class="qr-section" (click)="navigateTo()">
+      <img src="assets/qr.png" alt="QR Code" class="qr-image" />
+    </div>
+  </div>
+  <div class="notification-banner" *ngIf="showBanner">
+    <span class="banner">{{ 'SHOWS_ONLY_TODAYS_TRANSACTIONS' | translate }}</span>
+    <img src="assets/close.png" class="close-icon" alt="Close" (click)="dismissNotification()" />
+  </div>
+  
+  
+
+  <!-- Date Container - Visible on Dashboard and Transactions tabs -->
+  <div id="date-container" *ngIf="currentTab === 'dashboard' || currentTab === 'transactions'">
+    <div class="date-wrapper">
+      <span class="d">{{ 'AS_OF' | translate }}</span> <!-- Translatable "As of" -->
+      <div class="rectangle">
+        <strong class="date">{{ fullDate }}</strong>
+      </div>
+      
+      <span  class="d" >({{ 'TODAY' | translate }})</span> <!-- Translatable "Today" -->
+    </div>
+  </div>
+
+  <!-- Dashboard Page Content -->
+ 
+    <div id="stats-containers" *ngIf="currentTab === 'dashboard'">
+      <div class="stat-card">
+        <span class="stat-icon">#</span>
+        <span class="stat-label">{{ 'TOTAL_TRANSACTIONS' | translate }}</span> <!-- Translatable label -->
+        <span class="stat-value">{{ totalTransactions }}</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">₹</span>
+        <span class="stat-label">{{ 'TOTAL_AMOUNT' | translate }}</span> <!-- Translatable label -->
+        <span class="stat-value">{{ totalAmount }}</span>
+      </div>
+    </div>
+
+
+  <!-- Footer with Tab Bar -->
+  <ion-footer class="footer">
+    <app-tab-bar></app-tab-bar> <!-- Reuse TabBarComponent -->
+  </ion-footer>
+</ion-content>

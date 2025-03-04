@@ -1,0 +1,35 @@
+<ion-content [fullscreen]="true" id="full-page">
+  <!-- Pink Container - Hide when the current tab is 'dashboard' -->
+  <div id="pink-container" *ngIf="currentTab !== 'dashboard'">
+    <div class="bank-info">
+      <!-- Main Header -->
+      <img src="assets/rightlogo.png" class="back-icon" alt="Back" (click)="goBack()" />
+      <h1 class="dashboard-text" >
+      
+        {{ 'MY_PROFILE' | translate }}
+      </h1>
+      
+    </div>
+  </div>
+
+  <!-- Profile Information -->
+ 
+  <div *ngIf="currentTab === 'my-profile'" class="profile-container">
+    <div class="profile-container-box">
+      <ion-row >
+        <div class="profile-container-item">
+          <ion-label class="user-key"> {{ 'PROFILE_NAME' | translate }}</ion-label>
+          <ion-label class="user-value">{{ customerName || ('GUEST' | translate) }}</ion-label>
+        </div>
+      </ion-row>
+      <ion-row>
+        <div class="profile-container-item">
+          <ion-label class="user-key"> {{ 'PROFILE_PHONE' | translate }}</ion-label>
+          <ion-label class="user-value">{{ userPhoneNumber || ('NA' | translate) }}</ion-label>
+        </div>
+      </ion-row>
+    </div>
+    
+  </div>
+
+</ion-content>

@@ -1,0 +1,40 @@
+<ion-content [fullscreen]="true" id="full-page">
+  <!-- Pink Rounded Container -->
+  <div id="pink-container">
+
+    <strong class="b">{{ 'VERIFY_LOGIN_PIN.TITLE' | translate }}</strong>
+  </div>
+
+  <!-- Verify MPIN Input Section -->
+  <div id="checkbox-container">
+    <!-- Instruction Text -->
+    <div class="instruction-container">
+      <ion-label class="instruction-text">
+        {{ 'VERIFY_LOGIN_PIN.INSTRUCTION' | translate }}
+      </ion-label>
+    </div>
+
+    <!-- MPIN Input Boxes -->
+    <ng-otp-input  #otpInput
+    class="a" [(ngModel)]="otp" [config]="{ length: 4, allowNumbersOnly: true,  isPasswordInput : true, containerClass:'input-container', inputStyles: {
+      'width': '50px',
+      'height': '40px',
+      'margin': '0px' 
+
+
+    } }"
+      (onInputChange)="onOtpInputChange($event)">
+    </ng-otp-input>
+
+    <!-- Error Message -->
+    <ion-text class="span" color="danger" *ngIf="errorMessage">
+      {{ 'ERROR.PIN_MISMATCH' | translate }}
+    </ion-text>
+    
+  </div>
+
+  <!-- Submit Button -->
+  <div id="sign-in-button">
+    <button (click)="verifyMpin()">{{ 'VERIFY_LOGIN_PIN.CONFIRM' | translate }}</button>
+  </div>
+</ion-content>

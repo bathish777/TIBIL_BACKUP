@@ -1,0 +1,267 @@
+/* Rotation animation */
+.rotating-image {
+  animation: spin 4s linear infinite; /* Infinite rotation every 2 seconds */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add a class to stop the animation */
+.stop-rotation {
+  animation: none;
+}
+.loader-container {
+  display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 82vh;
+    text-align: center;
+    gap: 5px;
+}
+
+
+
+
+
+
+
+/* Full Page Styling */
+#full-page {
+  position: relative; /* Set the parent container to relative */
+  height: 100%; /* Ensure it takes full viewport height */
+  overflow: hidden; /* Prevent the content from overflowing */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo{
+  margin-right: 270px;
+  // background-color: red;
+  margin-bottom: 150px;
+  position: fixed;
+
+}
+.b {
+  font-family: "Philosopher", serif;
+  font-size: 28px; /* Set the font size */
+  font-weight: 700; /* Set the font weight */
+  line-height: 31.36px; /* Set the line height */
+  text-align: center; /* Align text to the center */
+  text-underline-position: from-font; /* Position underline based on font metrics */
+  // text-decoration: underline; /* Add underline */
+  text-decoration-skip-ink: none; /* Ensure underline does not skip over ink */
+ 
+  // background-color: red;
+  align-items: center;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Checkbox Container for SIM Selection */
+#checkbox-container {
+  margin-top: 290px; /* Space to account for pink container */
+  // background: #f8f8f8;
+  padding: 55px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 310.1px;
+height: 130px;
+top: 310px;
+left: 25px;
+gap: 0px;
+opacity: 0px;
+margin-left: 35px;
+text-align: center;
+
+
+}
+
+/* Terms and Conditions */
+#terms-container {
+  height: 18px;
+  top: 80px;
+  left: 25px;
+  margin-top: 10px;
+  margin-left: 30px;
+
+  gap: 0px;
+  border: 1px 1px #868683;
+  // opacity: 0px;
+  // background: #868683;
+}
+
+
+#sign-in-button {
+  display: flex;
+  justify-content: center;
+  position: absolute; /* Absolute positioning */
+  // top: 650px; /* Positioned to match Home Page */
+  // left: 0;
+  // width: 100%; /* Full-width alignment */
+  width: 315px;
+height: 40px;
+top: 645px;
+left: 32px;
+gap: 0px;
+opacity: 0px;
+margin-top: 40px;
+
+}
+
+#sign-in-button button {
+  width: 315px; /* Button width */
+  height: 45px; /* Button height */
+  // background-color: #DA107E; /* Pink background */
+   background-color: rgb(29, 29, 128); 
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 18px; /* Font size */
+  font-weight: bold; /* Bold text */
+  cursor: pointer; /* Pointer cursor on hover */
+  padding: 12px; /* Inner padding */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+#sign-in-button button:hover {
+  background-color: rgb(29, 29, 128); 
+}
+
+
+/* Media Queries for Android devices */
+
+/* For Android devices with a max-width of 768px (common for tablets and smaller screens) */
+@media (max-width: 768px) and (min-width: 550px) {
+  /* Full Page */
+  #full-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    padding: 0 10px; /* Add some padding for better spacing */
+  }
+
+  /* Pink Rounded Container */
+  #pink-container {
+    width: 350px; /* Reduce width to fit smaller screens */
+    height: 500px; /* Adjust height for smaller screens */
+    top: -90px; /* Adjust position */
+    left: -70px; /* Align it properly */
+    right: -70px;
+    // border-radius: 0 0 200px 200px; /* Adjust border radius */
+  }
+
+  /* Checkbox Container */
+  #checkbox-container {
+    margin-top: 180px; /* Adjust margin to position elements better */
+    padding: 30px;
+    width: 100%;
+    max-width: 90%; /* Adjust width for mobile view */
+  }
+
+  /* Sign In Button */
+ 
+}
+.terms-text{
+margin-right: 5PX;
+  color: #868683;
+  // margin-top: 50px;
+  // text-decoration: underline; 
+}
+.terms-link{
+  color: #868683;
+  text-decoration: underline; 
+}
+.logo{
+  margin-right: 270px;
+  // background-color: red;
+  margin-bottom: 120px;
+  position: fixed;
+}
+.small-checkbox{
+  margin-right: 5px;
+}
+
+.verification-image {
+  width: 250px;
+  height: 250px;
+
+  // opacity: 0.8; /* Adjust visibility */
+}
+
+.verification-text {
+  font-size: 16px;
+  font-weight: 600;
+  color:black; /* Dark gray for better readability */
+  /* Adjust to position above spinner */
+  // top: -100px;
+}
+
+#sign-in-button button {
+  margin-top: 20px;
+  background-color:#131367; /* Primary Ionic button color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Style for the image */
+.verification-image {
+width: 100px; /* Adjust size of the image */
+height: 100px;
+}
+
+/* Rotation animation */
+.rotating-image {
+animation: spin 4s linear infinite; /* Infinite rotation every 2 seconds */
+width: 250px;
+height: 250px;
+
+// opacity: 0px;
+
+}
+
+/* Keyframes for spinning animation */
+@keyframes spin {
+from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(360deg);
+}
+}

@@ -1,0 +1,152 @@
+{
+  "SETTINGS": "सेटिंग्स",
+  "MY_PROFILE": "मेरा प्रोफ़ाइल",
+  "MY_QR_CODE": "मेरा QR कोड",
+  "ANNOUNCEMENT": "घोषणा",
+  "LANGUAGE_PREFERENCE": "मेरी भाषा वरीयता",
+  "CHANGE_MPIN": "मेरा MPIN बदलें",
+  "SIGN_OUT": "साइन आउट",
+  "ANNOUNCEMENTS_MUTED": "ध्वनि घोषणाएँ म्यूट की गईं!",
+  "ANNOUNCEMENTS_UNMUTED": "ध्वनि घोषणाएँ अनम्यूट की गईं!",
+  "SIGN_OUT_CONFIRMATION": "क्या आप वाकई साइन आउट करना चाहते हैं?",
+  "RESET_MPIN_CONFIRMATION": "क्या आप वाकई MPIN रीसेट करना चाहते हैं?",
+  "DASHBOARD": "डैशबोर्ड",
+  "TRANSACTIONS": "लेनदेन",
+  "SHOWS_ONLY_TODAYS_TRANSACTIONS": "यह एप्लिकेशन केवल आज के लेनदेन दिखाता है",
+  "AS_OF": "आज तक",
+  "TODAY": "आज",
+  "TOTAL_TRANSACTIONS": "कुल लेनदेन",
+  "TOTAL_AMOUNT": "कुल राशि",
+  "LOADING_TRANSACTIONS": "लेनदेन लोड हो रहे हैं...",
+  "NO_MORE_TRANSACTIONS": "अब और लेनदेन उपलब्ध नहीं हैं",
+  "TRANSACTION_LIST": "लेनदेन सूची",
+  "TRANSACTION_DATE": "लेनदेन की तारीख",
+  "TRANSACTION_AMOUNT": "लेनदेन राशि",
+  "TITLE": {
+    "SIGN_IN": "साइन इन करें"
+  },
+  "SIM": {
+    "SIM_LABEL": "SIM {{ index }}",
+    "SIM_NAME": "{{carrier}}",
+    "UNKNOWN_CARRIER": "अज्ञात कैरियर"
+  },
+  "TERMS": {
+    "ACCEPT": "मैं सहमत हूँ",
+    "LINK": "नियम और शर्तें",
+    "TITLE": "नियम और शर्तें",
+    "NO_TERMS": "कोई नियम उपलब्ध नहीं हैं।",
+    "LOAD_FAIL": "नियम और शर्तें लोड करने में विफल।"
+  },
+  "ERROR": {
+    "SIM_INFO": "SIM जानकारी प्राप्त करने में असमर्थ।",
+    "SELECT_SIM": "कृपया आगे बढ़ने के लिए SIM चुनें।",
+    "MOBILE_FETCH": "मोबाइल नंबर प्राप्त करने में विफल।",
+    "SMS_SEND": "SMS भेजने में विफल।",
+    "NO_TERMS": "कोई सामग्री उपलब्ध नहीं।",
+    "TERMS_LOAD": "नियम और शर्तें लोड करने में विफल।",
+    "NO_MOBILE_NUMBER": "उपयोगकर्ता डिवाइस में कोई वैध मोबाइल नंबर नहीं मिला।",
+    "MOBILE_REQUIRED": "खाते प्राप्त करने के लिए मोबाइल नंबर आवश्यक है।",
+    "FETCH_ACCOUNTS": "खाते प्राप्त करने में विफल।",
+    "ACCOUNTS_RETRY": "खाते प्राप्त करने में त्रुटि। कृपया पुनः प्रयास करें।",
+    "SELECT_ACCOUNT": "आगे बढ़ने के लिए कृपया एक खाता चुनें।",
+    "INVALID_OTP": "दर्ज किया गया PIN गलत है। कृपया पुनः प्रयास करें।",
+    "INVALID_PIN": "कृपया एक वैध 4-अंकीय लॉगिन PIN दर्ज करें।",
+    "PIN_MISMATCH": "दर्ज किया गया PIN मेल नहीं खाता। कृपया पुनः प्रयास करें।",
+    "REENTER_VALID_PIN": "कृपया एक वैध 4-अंकीय PIN पुनः दर्ज करें।",
+    "VALID_4_DIGIT_PIN": "कृपया एक वैध 4-अंकीय PIN दर्ज करें।"
+  },
+  "GENERAL": {
+    "BACK": "पीछे",
+    "NEXT": "आगे",
+    "CANCEL": "रद्द करें",
+    "SAVE": "सहेजें"
+  },
+  "ACCOUNT_SELECTION": {
+    "HEADER": "साउंडबॉक्स से कनेक्ट करने के लिए खाता चुनें",
+    "ACCOUNT_TYPE": "खाता प्रकार",
+    "IFSC_CODE": "IFSC कोड",
+    "NO_ACCOUNTS": "चयन करने के लिए कोई खाते उपलब्ध नहीं हैं।",
+    "DROPDOWN_ALT": "खाता विवरण टॉगल करें"
+  },
+  "BUTTON": {
+    "NEXT": "आगे",
+    "NEXT_ICON_ALT": "आगे का आइकन",
+    "CLOSE": "बंद करें"
+  },
+  "VPA_SELECTION": {
+    "HEADER": "VPA ID चुनें",
+    "NO_VPAS": "चयन करने के लिए कोई VPAs उपलब्ध नहीं हैं।"
+  },
+  "OTP_VERIFICATION": {
+    "TITLE": "OTP सत्यापन",
+    "INSTRUCTION": "अपने डिवाइस पर भेजा गया OTP दर्ज करें",
+    "RESEND_IN": "{{time}} सेकंड में OTP पुनः भेजें",
+    "RESEND_OTP": "OTP पुनः भेजें",
+    "NEXT": "आगे",
+    "FETCH_FAILED": "OTP प्राप्त करने में विफल। कृपया पुनः प्रयास करें।",
+    "ERROR_FETCHING": "OTP प्राप्त करने में त्रुटि। कृपया पुनः प्रयास करें।",
+    "NO_MOBILE": "स्थानीय संग्रहण में मोबाइल नंबर नहीं मिला।",
+    "NO_VALID_MOBILE": "उपयोगकर्ता डिवाइस में कोई वैध मोबाइल नंबर नहीं मिला।",
+    "INVALID_OTP": "अमान्य OTP। कृपया पुनः प्रयास करें।",
+    "RESEND_FAILED": "OTP पुनः भेजने में विफल। कृपया पुनः प्रयास करें।",
+    "ERROR_RESENDING": "OTP पुनः भेजने में त्रुटि। कृपया पुनः प्रयास करें।"
+  },
+  "CREATE_NEW_PIN": {
+    "TITLE": "नया लॉगिन PIN दर्ज करें",
+    "INSTRUCTION": "4-अंकीय लॉगिन PIN दर्ज करें",
+    "NEXT": "आगे",
+    "INVALID_PIN": "कृपया एक वैध 4-अंकीय PIN दर्ज करें।"
+  },
+  "VERIFY_LOGIN_PIN": {
+    "TITLE": "लॉगिन PIN सत्यापित करें",
+    "INSTRUCTION": "अपना 4-अंकीय लॉगिन PIN पुनः दर्ज करें",
+    "CONFIRM": "पुष्टि करें",
+    "INVALID_PIN": "कृपया एक वैध 4-अंकीय PIN दर्ज करें।"
+  },
+  "ENTER_LOGIN_PIN": {
+    "TITLE": "लॉगिन PIN दर्ज करें",
+    "INSTRUCTION": "अपना 4-अंकीय लॉगिन PIN दर्ज करें",
+    "NEXT": "आगे",
+    "INVALID_PIN": "कृपया एक वैध 4-अंकीय PIN दर्ज करें।"
+  },
+  "ENTER_LOGIN_PIN": {
+    "TITLE": "लॉगिन पिन दर्ज करें",
+    "INSTRUCTION": "अपना 4-अंकीय लॉगिन पिन दर्ज करें",
+    "NEXT": "आगे",
+    "INVALID_PIN": "कृपया एक मान्य 4-अंकीय पिन दर्ज करें।"
+  },
+  
+    "FORGOT_LOGIN_PIN": "लॉगिन पिन भूल गए?",
+    "SHARE_QR_CODE": "QR कोड साझा करें",
+    "GO_TO_DASHBOARD": "डैशबोर्ड पर जाएं",
+    "VERIFY_NEW_PIN": "नया लॉगिन पिन सत्यापित करें",
+    "REENTER_VALID_PIN": "कृपया एक मान्य 4-अंकीय पिन दोबारा दर्ज करें।",
+    "CONFIRM": "पुष्टि करें",
+  
+  
+  "DASHBOARD_HEADER": "डैशबोर्ड",
+  "QR_CODE_HEADER": "QR कोड",
+  "SHARE_QR_CODE": "QR कोड साझा करें",
+  "NO_QR_CODE": "QR कोड उपलब्ध नहीं है",
+  "GREETING": "नमस्कार,",
+  "CUSTOMER_NAME": "ग्राहक का नाम",
+  "GO_TO_DASHBOARD": "डैशबोर्ड पर जाएं",
+  "BACK_TO": "{{currentHeader}} पर वापस जाएं",
+  "LANGUAGE_PREFERENCE": "भाषा वरीयता",
+  "ENGLISH": "अंग्रेज़ी",
+  "HINDI": "हिन्दी हिंदी",
+  "KANNADA": "कन्नड़ ಕನ್ನಡ",
+  "SIGN_OUT_WARNING": "यह आपके स्थानीय डेटा को मिटा देगा, और आपको फिर से अपने मोबाइल नंबर से लॉगिन करना होगा।",
+  "RESET_MPIN_WARNING": "आप पुराने MPIN का उपयोग नहीं कर सकते।",
+  
+    "MY_PROFILE": "मेरी प्रोफ़ाइल",
+    "FORGOT_LOGIN_PIN": "लॉगिन पिन भूल गए?",
+    "GO_TO_DASHBOARD": "डैशबोर्ड",
+    
+    "LOADING_TRANSACTIONS": "लेन-देन लोड हो रहा है...",
+    "NO_MORE_TRANSACTIONS": "लोड करने के लिए और कोई लेन-देन नहीं है।",
+    "ANNOUNCEMENT_WARNING": "आप सेटिंग्स स्क्रीन में भाषा वरीयता विकल्प पर जाकर पसंदीदा भाषा चुन सकते हैं।",
+    "ANNOUNCEMENT_MUTE_WARNING": "आप सेटिंग्स स्क्रीन में वॉइस घोषणाओं को अनम्यूट कर सकते हैं।"
+  }
+  
+

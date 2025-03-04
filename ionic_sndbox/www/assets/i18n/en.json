@@ -1,0 +1,163 @@
+{
+  "SETTINGS": "Settings",
+  "MY_PROFILE": "My Profile",
+  "MY_QR_CODE": "My QR Code",
+  "ANNOUNCEMENT": "Announcement",
+  "LANGUAGE_PREFERENCE": "My Language Preference",
+  "CHANGE_MPIN": "Change My MPIN",
+  "SIGN_OUT": "Sign Out",
+  "ANNOUNCEMENTS_MUTED": "Voice announcements are muted!",
+  "ANNOUNCEMENTS_UNMUTED": "Voice announcements are unmuted!",
+  "SIGN_OUT_CONFIRMATION": "Are you sure you want to sign out?",
+  "RESET_MPIN_CONFIRMATION": "Are you sure you want to reset MPIN?",
+  "DASHBOARD": "Dashboard",
+  "TRANSACTIONS": "Transactions",
+  "SHOWS_ONLY_TODAYS_TRANSACTIONS": "This application shows only today's transactions",
+  "AS_OF": "As of",
+  "TODAY": "Today",
+  "TOTAL_TRANSACTIONS": "Total Transactions",
+  "TOTAL_AMOUNT": "Total Amount",
+  "LOADING_TRANSACTIONS": "Loading transactions...",
+  "NO_MORE_TRANSACTIONS": "No more transactions available",
+  "TRANSACTION_LIST": "Transaction List",
+  "TRANSACTION_DATE": "Transaction Date",
+  "TRANSACTION_AMOUNT": "Transaction Amount",
+  "TITLE": {
+    "SIGN_IN": "Sign In"
+  },
+  "SIM": {
+    "SIM_LABEL": "SIM {{ index }}",
+    "SIM_NAME": "{{carrier}}",
+    "UNKNOWN_CARRIER": "Unknown Carrier"
+  },
+  "TERMS": {
+    "ACCEPT": "I agree with the",
+    "LINK": "Terms and Conditions",
+    "TITLE": "Terms and Conditions",
+    "NO_TERMS": "No terms available.",
+    "LOAD_FAIL": "Failed to load Terms and Conditions."
+  },
+  "ERROR": {
+    "SIM_INFO": "Unable to fetch SIM info.",
+    "SELECT_SIM": "Please select a SIM to proceed.",
+    "MOBILE_FETCH": "Failed to fetch mobile number.",
+    "SMS_SEND": "Failed to send SMS.",
+    "NO_TERMS": "No content available.",
+    "TERMS_LOAD": "Failed to load Terms and Conditions.",
+    "NO_MOBILE_NUMBER": "No valid mobile number found in user devices.",
+    "MOBILE_REQUIRED": "Mobile number is required to fetch accounts.",
+    "FETCH_ACCOUNTS": "Failed to fetch accounts.",
+    "ACCOUNTS_RETRY": "Error fetching accounts. Please try again.",
+    "SELECT_ACCOUNT": "Please select an account before proceeding.",
+    "INVALID_OTP": "Entered PIN does not match. Please try again.",
+    "INVALID_PIN": "Please create a valid 4-digit Login Pin.",
+    "PIN_MISMATCH": "Entered PIN does not match. Please try again.",
+    "REENTER_VALID_PIN": "Please re-enter a valid 4-digit PIN.",
+    "VALID_4_DIGIT_PIN": "Please enter a valid 4-digit PIN."
+  },
+  "GENERAL": {
+    "BACK": "Back",
+    "NEXT": "NEXT",
+    "CANCEL": "Cancel",
+    "SAVE": "Save"
+  },
+  "ACCOUNT_SELECTION": {
+    "HEADER": "Select an account to connect to Soundbox",
+    "ACCOUNT_TYPE": "Account Type",
+    "IFSC_CODE": "IFSC Code",
+    "NO_ACCOUNTS": "No accounts available to select.",
+    "DROPDOWN_ALT": "Toggle account details"
+  },
+  "BUTTON": {
+    "NEXT": "Next",
+    "NEXT_ICON_ALT": "Next Icon",
+    "CLOSE": "Close"
+  },
+  "VPA_SELECTION": {
+    "HEADER": "Select a VPA ID",
+    "NO_VPAS": "No VPAs available to select."
+  },
+  "OTP_VERIFICATION": {
+    "TITLE": "OTP Verification",
+    "INSTRUCTION": "Please enter the OTP sent to your device",
+    "RESEND_IN": "Resend OTP in {{time}}",
+    "RESEND_OTP": "Resend OTP",
+    "NEXT": "Next",
+    "FETCH_FAILED": "Failed to fetch OTP. Please try again.",
+    "ERROR_FETCHING": "Error fetching OTP. Please try again.",
+    "NO_MOBILE": "Mobile number not found in localStorage.",
+    "NO_VALID_MOBILE": "No valid mobile number found in user devices.",
+    "INVALID_OTP": "Invalid OTP. Please try again.",
+    "RESEND_FAILED": "Failed to resend OTP. Please try again.",
+    "ERROR_RESENDING": "Error resending OTP. Please try again.",
+    "ERROR_VERIFYING" : "Please enter the OTP sent to your device"
+  },
+  "CREATE_NEW_PIN": {
+    "TITLE": "Enter New Login Pin",
+    "INSTRUCTION": "Enter a 4-digit login Pin",
+    "NEXT": "NEXT",
+    "INVALID_PIN": "Please enter a valid 4-digit PIN."
+  },
+  "VERIFY_LOGIN_PIN": {
+    "TITLE": "Verify Login Pin",
+    "INSTRUCTION": "Re-enter your 4-digit Login Pin",
+    "CONFIRM": "CONFIRM",
+    "INVALID_PIN": "Please enter a valid 4-digit PIN."
+  },
+  
+    "ENTER_LOGIN_PIN": {
+      "TITLE": "Enter Login Pin",
+      "INSTRUCTION": "Enter your 4-digit login Pin",
+      "NEXT": "NEXT",
+      "INVALID_PIN": "Please enter a valid 4-digit PIN."
+    },
+    "CREATE_LOGIN_PIN": {
+      "TITLE": "Create Login Pin",
+      "INSTRUCTION": "Create your 4-digit login Pin",
+      "NEXT": "NEXT",
+      "INVALID_PIN": "Please enter a valid 4-digit PIN."
+    },
+    "ERROR": {
+      "INVALID_OTP": "Invalid OTP. Please try again.",
+      "INVALID_PIN": "Invalid PIN. Please try again."
+    },
+    "FORGOT_LOGIN_PIN": "Forgot Login Pin?",
+  
+  "DASHBOARD_HEADER": "Dashboard",
+  "QR_CODE_HEADER": "This is Your QR Code",
+  "SHARE_QR_CODE": "Share QR Code",
+  "NO_QR_CODE": "No QR code available",
+  "GREETING": "Hello,",
+  "CUSTOMER_NAME": "Customer Name",
+  "GO_TO_DASHBOARD": "Go To Dashboard",
+  "BACK_TO": "Back to {{currentHeader}}",
+  "LANGUAGE_PREFERENCE": "Language Preference",
+  "ENGLISH": "English",
+  "HINDI": "Hindi हिंदी",
+  "KANNADA": "Kannada ಕನ್ನಡ",
+  "PROFILE_NAME": "Name",
+  "PROFILE_PHONE": "Phone Number",
+  "GUEST": "Guest",
+  "NA": "N/A",
+  "VERIFY_NEW_PIN": "Verify New Login Pin",
+  "RE_ENTER_PIN": "Re-enter your 4-digit login Pin",
+  "CONFIRM": "CONFIRM",
+  "SIGN_OUT_WARNING": "This will clear your local data, and you will need to sign in again using your mobile number.",
+  "RESET_MPIN_WARNING": "You will no longer be able to use your previous MPIN.",
+  "MY_PROFILE": "My Profile",
+  "FORGOT_LOGIN_PIN":"Forgot Login Pin?",
+  "GO_TO_DASHBOARD":"Dashboard",
+  
+    "LOADING_TRANSACTIONS": "Loading transactions...",
+    "NO_MORE_TRANSACTIONS": "No more transactions to load.",
+    "ANNOUNCEMENT_WARNING":"You can select the preferred language by going to the language Preference option in the Settings screen ",
+    "ANNOUNCEMENT_MUTE_WARNING":"You can  unmute the voice announcements in the Settings screen",
+    
+      "MUTE_ANNOUNCEMENT_CONFIRMATION": "Are you sure you want to mute announcements?",
+      "MUTE_ANNOUNCEMENT_WARNING": "You will no longer receive announcement notifications.",
+      "UNMUTE_ANNOUNCEMENT_CONFIRMATION": "Are you sure you want to unmute announcements?",
+      "UNMUTE_ANNOUNCEMENT_WARNING": "You will start receiving announcement notifications again."
+    
+  }
+  
+

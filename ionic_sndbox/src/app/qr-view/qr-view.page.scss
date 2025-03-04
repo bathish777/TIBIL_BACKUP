@@ -1,0 +1,187 @@
+/* Full Page Styling */
+#full-page {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.b {
+  font-family: Philosopher;
+  font-weight: 700;
+  font-size: 35px;
+  leading-trim: Cap height;
+  line-height: 39.2px;
+  letter-spacing: 0%;
+  text-align: center;
+  
+  margin-left: 50px; /* Add margin to the right */
+  // background-color: red;
+  margin-top: 300px;
+  margin-right: 50px;
+  color: rgba(19, 19, 103, 1);
+
+  align-items: center;
+}
+.cancel-icon{
+  
+    margin-top: 11px;
+    height: 25px;
+    margin-left: 326px;
+    width: 25px;
+}
+.c {
+  font-family: Philosopher;
+  font-weight: 700;
+  font-size: 35px;
+  leading-trim: Cap height;
+  line-height: 39.2px;
+  letter-spacing: 0%;
+  text-align: center;
+  
+  // text-decoration: underline; /* Add underline */
+  text-decoration-skip-ink: none; /* Ensure underline does not skip over ink */
+  margin-left: 35px; /* Add margin to the right */
+  // background-color: red;
+  margin-top: 300px;
+  margin-right: 50px;
+  // color: #131367;
+  align-items: center;
+  color: rgba(224, 164, 9, 1);
+
+}
+
+.next-button {
+  font-family:'Karla', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #007aff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  display: flex; /* Enables flex layout */
+  align-items: center; /* Align items vertically in the center */
+  justify-content: center; /* Center content horizontally */
+  gap: 8px; /* Add space between text and icon */
+  cursor: pointer;
+  outline: none;
+}
+
+.text {
+  margin: 0; /* Prevents unintended movement */
+}
+
+.next-icon {
+  width: 16px; /* Adjust size as needed */
+  height: 16px;
+  position: relative;
+  top: 0px; /* Move the arrow slightly upwards without affecting the text */
+}
+
+/* Greeting Section */
+#greeting-container {
+  font-family: "Philosopher", serif;
+  width: 100%;
+  position: relative;
+  margin-top: 40px; /* Adjust spacing from the top */
+  text-align: center;
+  color: #333;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+#greeting-container span {
+  font-size: 18px;
+  font-weight: normal;
+  color: #666;
+}
+
+/* QR Code Section */
+#checkbox-container {
+  // width: 310px;
+  // position: absolute;
+  top: 150px;
+  left: 25px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // background: #f9f9f9;
+  // border-radius: 10px;
+  // box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+}
+
+/* Instruction Text */
+.instruction-text {
+ 
+  color: #3D3D3B;
+  
+  margin-bottom: 20px;
+
+  font-family: 'Karla';
+font-size: 16px;
+font-weight: 400;
+line-height: 18.7px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+
+/* QR Code Styling */
+.qr-code-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 0px;
+  opacity: 0px;
+  // margin-top: 0px;
+}
+
+.qr-code {
+  width: 300px;
+  height: 250px;
+  top: 285px;
+  left: 30px;
+  // border: 2px solid #ddd;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+/* Sign-In Button */
+#sign-in-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute; /* Position similar to the home page */
+  width: 315px;
+  height: 45px;
+  top: 645px; /* Match placement with home page */
+  left: 23px;
+  gap: 0;
+}
+
+#sign-in-button button {
+  width: 100%; /* Full width of the parent */
+  height: 100%; /* Full height of the parent */
+  background-color: #0a0a62; /* Match home page background color */
+  color: #ffffff; /* White text */
+  border: none; /* Remove default borders */
+  border-radius: 40px; /* Curved edges */
+  font-family:'Karla';
+ font-size: 16px; /* Font size */
+  font-weight: 700; /* Bold text */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  padding: 12px; /* Inner padding for better appearance */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+#sign-in-button button:hover {
+  background-color: #050554; /* Slightly darker on hover */
+}
