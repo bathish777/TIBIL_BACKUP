@@ -1,4 +1,0 @@
-enum ThemeAppearanceType {
-  light,
-  dark,
-}
